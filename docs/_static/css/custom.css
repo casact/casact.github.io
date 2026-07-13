@@ -317,7 +317,7 @@ a:hover {
 .cas-heatmap-title {
   font-family: var(--pst-font-family-heading);
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: var(--cas-navy);
   text-align: center;
   margin: 0 0 0.75rem;
@@ -331,7 +331,7 @@ a:hover {
 
 .cas-heatmap-svg text.cas-heatmap-label {
   font-family: var(--pst-font-family-base);
-  font-size: 9px;
+  font-size: 12px;
   fill: var(--pst-color-text-muted);
 }
 
