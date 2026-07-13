@@ -1,25 +1,28 @@
 #!/usr/bin/env python3
-"""Regenerate the "Metrics" section of docs/projects.md from live GitHub data.
+"""Regenerate the "Metrics" section of docs/projects.md, plus the homepage
+contribution heatmap, from live GitHub data.
 
 Python + matplotlib port of casact/meta's git_metrics/core_metrics.Rmd
 (https://github.com/casact/meta/blob/master/git_metrics/core_metrics.Rmd).
 
-Charts are written to docs/_static/images/metrics/, and the markdown
-between the ``<!-- METRICS:START -->`` / ``<!-- METRICS:END -->`` markers
-in docs/projects.md is replaced with freshly generated tables and figures.
-Intended to be run daily by .github/workflows/update-metrics.yml.
+Charts are written to docs/_static/images/metrics/. The markdown between
+the ``<!-- METRICS:START/END -->`` markers in docs/projects.md and the
+``<!-- HEATMAP:START/END -->`` markers in docs/index.md is replaced with
+freshly generated tables and figures. Intended to be run daily (and on
+every push) by .github/workflows/update-metrics.yml.
 """
 
 from __future__ import annotations
 
 import sys
 from collections import Counter
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 import matplotlib
 
 matplotlib.use("Agg")
+import matplotlib.colors as mcolors
 import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 
@@ -31,14 +34,21 @@ ACCOUNT_ESTABLISHED = date(2019, 8, 1)
 REPO_ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = REPO_ROOT / "docs" / "_static" / "images" / "metrics"
 PROJECTS_MD = REPO_ROOT / "docs" / "projects.md"
+INDEX_MD = REPO_ROOT / "docs" / "index.md"
 FONTS_DIR = Path(__file__).resolve().parent / "fonts"
 
 NAVY = "#002D72"
 TEXT = "#1c2531"
-GRID = "#e0e0e0"
+AXIS_LINE = "#8a8a8a"
 
 FONT_BODY = "Source Sans 3"
 FONT_HEADING = "Montserrat"
+
+# Same blues used across the site (docs/_static/css/custom.css: --cas-navy,
+# --cas-blue-light) for the contribution heatmap gradient.
+HEATMAP_CMAP = mcolors.LinearSegmentedColormap.from_list(
+    "cas_blues", ["#eaf7fb", "#74d2e7", "#1c6ea8", "#002D72"]
+)
 
 # Same typefaces as the site's own CSS (docs/_static/css/custom.css). These
 # are static weight instances of the variable Google Fonts files, since
@@ -50,12 +60,11 @@ plt.rcParams.update(
     {
         "figure.facecolor": "white",
         "axes.facecolor": "white",
-        "axes.edgecolor": GRID,
-        "axes.grid": True,
+        "axes.edgecolor": AXIS_LINE,
+        "axes.linewidth": 1,
+        "axes.grid": False,
         "axes.spines.top": False,
         "axes.spines.right": False,
-        "grid.color": GRID,
-        "grid.linewidth": 1,
         "axes.axisbelow": True,
         "font.family": FONT_BODY,
         "font.size": 11,
@@ -69,7 +78,7 @@ plt.rcParams.update(
 
 def style_axes(ax, title: str, xlabel: str, ylabel: str) -> None:
     ax.set_title(
-        title, fontfamily=FONT_HEADING, fontweight="bold", fontsize=13, color=NAVY, loc="left", pad=12
+        title, fontfamily=FONT_HEADING, fontweight="bold", fontsize=13, color=NAVY, loc="center", pad=12
     )
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
@@ -85,6 +94,91 @@ def save_barh(
     fig.tight_layout()
     fig.savefig(path, dpi=150)
     plt.close(fig)
+
+
+def save_heatmap(path: Path, commits_by_date: dict, weeks: int = 53) -> None:
+    """A GitHub-style contribution calendar, colored with the site's blues."""
+    end = date.today()
+    start = end - timedelta(weeks=weeks)
+    start -= timedelta(days=(start.weekday() + 1) % 7)  # snap back to a Sunday
+
+    xs, ys, counts = [], [], []
+    month_ticks: dict[int, str] = {}
+    for i in range((end - start).days + 1):
+        d = start + timedelta(days=i)
+        week_idx = (d - start).days // 7
+        dow = (d.weekday() + 1) % 7  # Sunday=0 .. Saturday=6
+        xs.append(week_idx)
+        ys.append(dow)
+        counts.append(commits_by_date.get(d, 0))
+        if d.day <= 7 and dow == 0:
+            month_ticks[week_idx] = d.strftime("%b")
+    num_weeks = max(xs) + 1
+
+    nonzero = sorted(c for c in counts if c > 0)
+    vmax = max(1, nonzero[int(len(nonzero) * 0.95)] if nonzero else 1)
+    norm = mcolors.Normalize(vmin=0, vmax=vmax, clip=True)
+
+    fig, ax = plt.subplots(figsize=(max(7, 0.16 * num_weeks), 2.8))
+    ax.scatter(xs, ys, c=counts, cmap=HEATMAP_CMAP, norm=norm, marker="s", s=38, linewidths=0)
+
+    # "Less -> More" legend, bottom-right, like GitHub's own heatmap.
+    legend_vals = [0, vmax * 0.25, vmax * 0.5, vmax * 0.75, vmax]
+    legend_x0 = num_weeks - len(legend_vals)
+    legend_y = 7.4
+    ax.scatter(
+        [legend_x0 + i for i in range(len(legend_vals))],
+        [legend_y] * len(legend_vals),
+        c=legend_vals,
+        cmap=HEATMAP_CMAP,
+        norm=norm,
+        marker="s",
+        s=38,
+        linewidths=0,
+    )
+    ax.text(legend_x0 - 1, legend_y, "Less", ha="right", va="center", fontsize=9, color=TEXT)
+    ax.text(
+        legend_x0 + len(legend_vals), legend_y, "More", ha="left", va="center", fontsize=9, color=TEXT
+    )
+
+    ax.set_ylim(-1, 8.2)
+    ax.set_xlim(-1, num_weeks)
+    ax.invert_yaxis()
+    ax.set_yticks([1, 3, 5])
+    ax.set_yticklabels(["Mon", "Wed", "Fri"])
+    ax.set_xticks(list(month_ticks.keys()))
+    ax.set_xticklabels(list(month_ticks.values()))
+    ax.xaxis.tick_top()
+    ax.tick_params(length=0)
+    for spine in ax.spines.values():
+        spine.set_visible(False)
+    ax.set_title(
+        "Contribution activity",
+        fontfamily=FONT_HEADING,
+        fontweight="bold",
+        fontsize=13,
+        color=NAVY,
+        loc="center",
+        pad=12,
+    )
+    fig.tight_layout()
+    fig.savefig(path, dpi=150)
+    plt.close(fig)
+
+
+def replace_between_markers(path: Path, start_marker: str, end_marker: str, generated: str) -> None:
+    text = path.read_text()
+    start = text.index(start_marker) + len(start_marker)
+    end = text.index(end_marker)
+    script_name = Path(__file__).name
+    new_text = (
+        text[:start]
+        + f"\n<!-- Generated by scripts/{script_name} - do not edit by hand. -->\n\n"
+        + generated
+        + "\n\n"
+        + text[end:]
+    )
+    path.write_text(new_text)
 
 
 def html_table(headers: list[str], rows: list[tuple]) -> str:
@@ -212,6 +306,16 @@ def main() -> None:
     fig.savefig(IMAGES_DIR / "cumulative_commits.png", dpi=150)
     plt.close(fig)
 
+    save_heatmap(IMAGES_DIR / "heatmap.png", commits_by_date)
+    replace_between_markers(
+        INDEX_MD,
+        "<!-- HEATMAP:START -->",
+        "<!-- HEATMAP:END -->",
+        image_md(
+            "CAS GitHub organization contribution activity over the past year", "heatmap.png"
+        ),
+    )
+
     author_counts = Counter(c[1] for c in all_commits if c[1])
     top_committers = author_counts.most_common(10)
 
@@ -279,21 +383,10 @@ def main() -> None:
     ]
     generated = "\n\n".join(blocks)
 
-    text = PROJECTS_MD.read_text()
-    start_marker = "<!-- METRICS:START -->"
-    end_marker = "<!-- METRICS:END -->"
-    start = text.index(start_marker) + len(start_marker)
-    end = text.index(end_marker)
-    new_text = (
-        text[:start]
-        + "\n<!-- Generated by scripts/generate_metrics.py - do not edit by hand. -->\n\n"
-        + generated
-        + "\n\n"
-        + text[end:]
-    )
-    PROJECTS_MD.write_text(new_text)
+    replace_between_markers(PROJECTS_MD, "<!-- METRICS:START -->", "<!-- METRICS:END -->", generated)
     print(
-        f"Updated {PROJECTS_MD}: {total_commits} commits across {repo_count} repos.",
+        f"Updated {PROJECTS_MD.name} and {INDEX_MD.name}: "
+        f"{total_commits} commits across {repo_count} repos.",
         file=sys.stderr,
     )
 
