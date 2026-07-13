@@ -363,24 +363,24 @@ A repository - typically called a "repo" for short - is the unit of measure for 
 
 As of 2026-07-13, there are 45 repositories in the organization. The count begins at ten repos as of the account's creation in August 2019, since several pre-existing repos were transferred in from other owners at that time.
 
-![Cumulative repository count over time](/_static/images/metrics/repo_growth.png)
+![Cumulative repository count over time](/_static/images/metrics/repo_growth.svg)
 
 ```{rubric} By language
 ```
 
 Where a repo has a predominant language, GitHub identifies it. Of the repos with a single predominant language, the count by language is:
 
-![Repository count by predominant language](/_static/images/metrics/by_language.png)
+![Repository count by predominant language](/_static/images/metrics/by_language.svg)
 
 ```{rubric} Watchers
 ```
 
-![Watchers per repo](/_static/images/metrics/watchers.png)
+![Watchers per repo](/_static/images/metrics/watchers.svg)
 
 ```{rubric} Forks
 ```
 
-![Forks per repo](/_static/images/metrics/forks.png)
+![Forks per repo](/_static/images/metrics/forks.svg)
 
 ```{rubric} Contributions
 ```
@@ -388,7 +388,7 @@ Where a repo has a predominant language, GitHub identifies it. Of the repos with
 ```{rubric} Commits
 ```
 
-There have been 4,931 commits in total. The top ten repos by number of commits are:
+There have been 4,934 commits in total. The top ten repos by number of commits are:
 
 ```{raw} html
 <table class="cas-repo-table">
@@ -412,7 +412,7 @@ There have been 4,931 commits in total. The top ten repos by number of commits a
 
 The cumulative growth of commits over time has been:
 
-![Cumulative commits over time](/_static/images/metrics/cumulative_commits.png)
+![Cumulative commits over time](/_static/images/metrics/cumulative_commits.svg)
 
 ```{rubric} Committers
 ```
@@ -425,7 +425,7 @@ The ten most frequent contributors across all repos are:
 <tr><th>Author</th><th>Commits</th></tr>
 </thead>
 <tbody>
-<tr><td>genedan</td><td>1,700</td></tr>
+<tr><td>genedan</td><td>1,702</td></tr>
 <tr><td>jbogaardt</td><td>867</td></tr>
 <tr><td>kennethshsu</td><td>646</td></tr>
 <tr><td>ResearchActuary</td><td>194</td></tr>
