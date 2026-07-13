@@ -32,6 +32,11 @@ html[data-theme="dark"] {
   --pst-color-background: #ffffff;
   --pst-color-text-base: #1c2531;
   --pst-color-border: var(--cas-cream);
+  /* Cards are always rendered on a white surface regardless of the
+     light/dark toggle (see --pst-color-surface/-background above), so pin
+     this too - otherwise dark mode's lighter default muted color washes
+     out against that white background. */
+  --pst-color-text-muted: #48566b;
 
   /* casact.org's own navy bar is a compact ~60px; the theme default (4rem
      row height alone) renders much taller, so trim it down to match. */

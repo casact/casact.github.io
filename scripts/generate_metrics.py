@@ -20,6 +20,7 @@ from pathlib import Path
 import matplotlib
 
 matplotlib.use("Agg")
+import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -30,33 +31,57 @@ ACCOUNT_ESTABLISHED = date(2019, 8, 1)
 REPO_ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = REPO_ROOT / "docs" / "_static" / "images" / "metrics"
 PROJECTS_MD = REPO_ROOT / "docs" / "projects.md"
+FONTS_DIR = Path(__file__).resolve().parent / "fonts"
 
 NAVY = "#002D72"
+TEXT = "#1c2531"
+GRID = "#e0e0e0"
+
+FONT_BODY = "Source Sans 3"
+FONT_HEADING = "Montserrat"
+
+# Same typefaces as the site's own CSS (docs/_static/css/custom.css). These
+# are static weight instances of the variable Google Fonts files, since
+# matplotlib/freetype can't select a variable font's weight axis on its own.
+for _font_path in (FONTS_DIR / "SourceSans3-Regular.ttf", FONTS_DIR / "Montserrat-Bold.ttf"):
+    fm.fontManager.addfont(str(_font_path))
 
 plt.rcParams.update(
     {
         "figure.facecolor": "white",
-        "axes.facecolor": "#f0f0f0",
-        "axes.edgecolor": "#f0f0f0",
+        "axes.facecolor": "white",
+        "axes.edgecolor": GRID,
         "axes.grid": True,
-        "grid.color": "white",
-        "grid.linewidth": 1.2,
+        "axes.spines.top": False,
+        "axes.spines.right": False,
+        "grid.color": GRID,
+        "grid.linewidth": 1,
         "axes.axisbelow": True,
+        "font.family": FONT_BODY,
         "font.size": 11,
-        "axes.labelcolor": "#333333",
-        "text.color": "#333333",
-        "xtick.color": "#333333",
-        "ytick.color": "#333333",
+        "axes.labelcolor": TEXT,
+        "text.color": TEXT,
+        "xtick.color": TEXT,
+        "ytick.color": TEXT,
     }
 )
 
 
-def save_barh(path: Path, labels: list[str], values: list[int], xlabel: str, ylabel: str) -> None:
+def style_axes(ax, title: str, xlabel: str, ylabel: str) -> None:
+    ax.set_title(
+        title, fontfamily=FONT_HEADING, fontweight="bold", fontsize=13, color=NAVY, loc="left", pad=12
+    )
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+
+
+def save_barh(
+    path: Path, labels: list[str], values: list[int], title: str, xlabel: str, ylabel: str
+) -> None:
     height = max(5, len(labels) * 0.22)
     fig, ax = plt.subplots(figsize=(7, height))
     ax.barh(labels, values, color=NAVY)
-    ax.set_xlabel(xlabel)
-    ax.set_ylabel(ylabel)
+    style_axes(ax, title, xlabel, ylabel)
     fig.tight_layout()
     fig.savefig(path, dpi=150)
     plt.close(fig)
@@ -109,8 +134,7 @@ def main() -> None:
     fig, ax = plt.subplots(figsize=(7, 5))
     ax.step(xs, ys, where="post", color=NAVY, linewidth=2)
     ax.set_ylim(bottom=0)
-    ax.set_xlabel("created_at")
-    ax.set_ylabel("num_repos")
+    style_axes(ax, "Cumulative repository count", "Date", "Number of repositories")
     fig.tight_layout()
     fig.savefig(IMAGES_DIR / "repo_growth.png", dpi=150)
     plt.close(fig)
@@ -122,8 +146,9 @@ def main() -> None:
         IMAGES_DIR / "by_language.png",
         [k for k, _ in items],
         [v for _, v in items],
-        "count",
-        "language",
+        "Repositories by language",
+        "Count",
+        "Language",
     )
 
     # -- Chart: watchers per repo ------------------------------------------
@@ -135,8 +160,9 @@ def main() -> None:
         IMAGES_DIR / "watchers.png",
         [k for k, _ in watched],
         [v for _, v in watched],
-        "watchers",
-        "name",
+        "Watchers by repository",
+        "Watchers",
+        "Repository",
     )
 
     # -- Chart: forks per repo ---------------------------------------------
@@ -148,8 +174,9 @@ def main() -> None:
         IMAGES_DIR / "forks.png",
         [k for k, _ in forked],
         [v for _, v in forked],
-        "forks",
-        "name",
+        "Forks by repository",
+        "Forks",
+        "Repository",
     )
 
     # -- Commits ------------------------------------------------------------
@@ -180,8 +207,7 @@ def main() -> None:
 
     fig, ax = plt.subplots(figsize=(7, 5))
     ax.plot(xs2, ys2, color=NAVY, linewidth=1.5)
-    ax.set_xlabel("date")
-    ax.set_ylabel("cumulative_commits")
+    style_axes(ax, "Cumulative commits over time", "Date", "Cumulative commits")
     fig.tight_layout()
     fig.savefig(IMAGES_DIR / "cumulative_commits.png", dpi=150)
     plt.close(fig)
