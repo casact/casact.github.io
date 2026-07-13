@@ -25,130 +25,11 @@ All 45 public repositories in the [casact GitHub organization](https://github.co
 </thead>
 <tbody>
 <tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/actsim" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>actsim</a></td>
-  <td></td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 9</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/Anonymizing-Ratemaking-Datasets-using-GANs" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>Anonymizing-Ratemaking-Datasets-using-GANs</a></td>
-  <td>Code supporting the paper &quot;Anonymizing Private Property/Casualty Ratemaking Datasets using Generative Adversarial Networks&quot; currently submitted</td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/bayesIBNRcyber" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>bayesIBNRcyber</a></td>
-  <td>Bayesian IBNR Model for Cyber Incidents</td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/capital-modeling" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>capital-modeling</a></td>
-  <td>CAS Monograph 15 - Introduction to Capital Modeling and Portfolio Management</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3D6117"></span>TeX</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 6</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/CAS-Project-Health-Insurance-Fraud-Detection" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>CAS-Project-Health-Insurance-Fraud-Detection</a></td>
-  <td>Integrating Machine Learning Models with Business Rule Triggers to Boost Performance in Health Insurance Fraud Detection: A Case Study</td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/casact.github.io" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>casact.github.io</a></td>
-  <td>Webpage for the casact GitHub</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/cascsim" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>cascsim</a></td>
-  <td></td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 5</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 5</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/casdown" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>casdown</a></td>
-  <td>RMarkdown formats for CAS publications</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/casproject2020_cred" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>casproject2020_cred</a></td>
-  <td>repository for the cas project 2020 on credibility</td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/catastrophe-loss-prediction-with-NLP" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>catastrophe-loss-prediction-with-NLP</a></td>
-  <td>Catastrophe loss prediction with NLP</td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/chainladder-python" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>chainladder-python</a></td>
   <td>Actuarial reserving in Python</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 262</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 105</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/claim_sim" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>claim_sim</a></td>
-  <td></td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/consumer_vehicle_toolkit" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>consumer_vehicle_toolkit</a></td>
-  <td>Casualty Actuarial Society Hacktuary Challenge (2022)</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#e34c26"></span>HTML</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/covid_19_data" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>covid_19_data</a></td>
-  <td>Data collection and exploratory analysis related to COVID-19 for general insurance actuaries and the public</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#DA5B0B"></span>Jupyter Notebook</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 14</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 6</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/double_lift" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>double_lift</a></td>
-  <td>Double Lift Charts in Python</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 9</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 7</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/e-forum" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>e-forum</a></td>
-  <td>Casualty actuarial society E-Forum</td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/ef-Unifying-Triangle-Methods" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>ef-Unifying-Triangle-Methods</a></td>
-  <td></td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/ef-yield-curve-generators" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>ef-yield-curve-generators</a></td>
-  <td></td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#b2011d"></span>Stan</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/FASLR" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>FASLR</a></td>
@@ -158,32 +39,18 @@ All 45 public repositories in the [casact GitHub organization](https://github.co
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 18</span></td>
 </tr>
 <tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/GAM_Examples" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>GAM_Examples</a></td>
-  <td>Example Code for Generalized Additive Models</td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/git-your-act-uary-together" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>git-your-act-uary-together</a></td>
-  <td>The Unofficial CAS Githering Place</td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 4</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 8</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/gk_errata" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>gk_errata</a></td>
-  <td></td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3D6117"></span>TeX</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/hardhat" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>hardhat</a></td>
-  <td>Workers&#x27; compensation, retrospective and experience rating</td>
+  <td class="cas-repo-name"><a href="https://github.com/casact/PCDM" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>PCDM</a></td>
+  <td>Property Casualty Data Model Specification</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 36</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 10</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/tryangle" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>tryangle</a></td>
+  <td>Tryangle is an automatic chainladder reserving framework. It provides scoring and optimisation methods based on machine learning techniques to automatically select optimal parameters to minimise reserve prediction error. </td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 28</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 12</span></td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/imaginator" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>imaginator</a></td>
@@ -193,18 +60,46 @@ All 45 public repositories in the [casact GitHub organization](https://github.co
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 6</span></td>
 </tr>
 <tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/intro_to_text_mining" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>intro_to_text_mining</a></td>
-  <td></td>
+  <td class="cas-repo-name"><a href="https://github.com/casact/rp-bnn-claims" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>rp-bnn-claims</a></td>
+  <td>Individual Claims Forecasting with Bayesian Mixture Density Networks</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3D6117"></span>TeX</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 17</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 3</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/covid_19_data" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>covid_19_data</a></td>
+  <td>Data collection and exploratory analysis related to COVID-19 for general insurance actuaries and the public</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#DA5B0B"></span>Jupyter Notebook</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 14</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 6</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/raw_package" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>raw_package</a></td>
+  <td>Data package for R actuarial workshops</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 12</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 3</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/risky-router" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>risky-router</a></td>
+  <td>This repository holds the code behind riskyrouter.com which was the joint winner of the inaugural CAS Hacktuary Challenge in 2022.</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 10</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
 </tr>
 <tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/linearscore" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>linearscore</a></td>
-  <td>R Codes for manuscript named &#x27;Linear Classifier Models for Binary Classification&#x27;</td>
+  <td class="cas-repo-name"><a href="https://github.com/casact/actsim" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>actsim</a></td>
   <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 9</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/double_lift" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>double_lift</a></td>
+  <td>Double Lift Charts in Python</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 9</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 7</span></td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/meta" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>meta</a></td>
@@ -221,11 +116,32 @@ All 45 public repositories in the [casact GitHub organization](https://github.co
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 4</span></td>
 </tr>
 <tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/OSSCIntro" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>OSSCIntro</a></td>
-  <td>A document that will be used to collaborate on learning collaborative editing using repositories</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3D6117"></span>TeX</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
+  <td class="cas-repo-name"><a href="https://github.com/casact/reinspy" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>reinspy</a></td>
+  <td>reinspy - a Python Reinsurance Package</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 8</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/capital-modeling" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>capital-modeling</a></td>
+  <td>CAS Monograph 15 - Introduction to Capital Modeling and Portfolio Management</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3D6117"></span>TeX</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 6</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/cascsim" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>cascsim</a></td>
+  <td></td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 5</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 5</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/git-your-act-uary-together" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>git-your-act-uary-together</a></td>
+  <td>The Unofficial CAS Githering Place</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 4</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 8</span></td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/painless_glms" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>painless_glms</a></td>
@@ -235,11 +151,102 @@ All 45 public repositories in the [casact GitHub organization](https://github.co
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
 </tr>
 <tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/PCDM" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>PCDM</a></td>
-  <td>Property Casualty Data Model Specification</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 36</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 10</span></td>
+  <td class="cas-repo-name"><a href="https://github.com/casact/claim_sim" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>claim_sim</a></td>
+  <td></td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/ef-yield-curve-generators" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>ef-yield-curve-generators</a></td>
+  <td></td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#b2011d"></span>Stan</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/GAM_Examples" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>GAM_Examples</a></td>
+  <td>Example Code for Generalized Additive Models</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/research-papers" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>research-papers</a></td>
+  <td>This will house subprojects associated with research papers sponsored by the CAS</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/stan_stans" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>stan_stans</a></td>
+  <td>Examples for and from the Stan stans study group of the CAS</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/bayesIBNRcyber" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>bayesIBNRcyber</a></td>
+  <td>Bayesian IBNR Model for Cyber Incidents</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/casdown" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>casdown</a></td>
+  <td>RMarkdown formats for CAS publications</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/catastrophe-loss-prediction-with-NLP" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>catastrophe-loss-prediction-with-NLP</a></td>
+  <td>Catastrophe loss prediction with NLP</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/e-forum" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>e-forum</a></td>
+  <td>Casualty actuarial society E-Forum</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/reserving-ensemble" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>reserving-ensemble</a></td>
+  <td></td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/technology_survey" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>technology_survey</a></td>
+  <td></td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#427819"></span>Makefile</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/Anonymizing-Ratemaking-Datasets-using-GANs" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>Anonymizing-Ratemaking-Datasets-using-GANs</a></td>
+  <td>Code supporting the paper &quot;Anonymizing Private Property/Casualty Ratemaking Datasets using Generative Adversarial Networks&quot; currently submitted</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/CAS-Project-Health-Insurance-Fraud-Detection" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>CAS-Project-Health-Insurance-Fraud-Detection</a></td>
+  <td>Integrating Machine Learning Models with Business Rule Triggers to Boost Performance in Health Insurance Fraud Detection: A Case Study</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/ef-Unifying-Triangle-Methods" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>ef-Unifying-Triangle-Methods</a></td>
+  <td></td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/pres_higher_learning" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>pres_higher_learning</a></td>
@@ -256,24 +263,66 @@ All 45 public repositories in the [casact GitHub organization](https://github.co
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 11</span></td>
 </tr>
 <tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/raw_package" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>raw_package</a></td>
-  <td>Data package for R actuarial workshops</td>
+  <td class="cas-repo-name"><a href="https://github.com/casact/shiny_big_long" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>shiny_big_long</a></td>
+  <td></td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 12</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 3</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/reinspy" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>reinspy</a></td>
-  <td>reinspy - a Python Reinsurance Package</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 8</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
 </tr>
 <tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/research-papers" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>research-papers</a></td>
-  <td>This will house subprojects associated with research papers sponsored by the CAS</td>
+  <td class="cas-repo-name"><a href="https://github.com/casact/casact.github.io" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>casact.github.io</a></td>
+  <td>Webpage for the casact GitHub</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/casproject2020_cred" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>casproject2020_cred</a></td>
+  <td>repository for the cas project 2020 on credibility</td>
   <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/consumer_vehicle_toolkit" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>consumer_vehicle_toolkit</a></td>
+  <td>Casualty Actuarial Society Hacktuary Challenge (2022)</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#e34c26"></span>HTML</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/gk_errata" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>gk_errata</a></td>
+  <td></td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3D6117"></span>TeX</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/hardhat" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>hardhat</a></td>
+  <td>Workers&#x27; compensation, retrospective and experience rating</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/intro_to_text_mining" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>intro_to_text_mining</a></td>
+  <td></td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/linearscore" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>linearscore</a></td>
+  <td>R Codes for manuscript named &#x27;Linear Classifier Models for Binary Classification&#x27;</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/OSSCIntro" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>OSSCIntro</a></td>
+  <td>A document that will be used to collaborate on learning collaborative editing using repositories</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3D6117"></span>TeX</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
 </tr>
 <tr>
@@ -284,60 +333,11 @@ All 45 public repositories in the [casact GitHub organization](https://github.co
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
 </tr>
 <tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/reserving-ensemble" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>reserving-ensemble</a></td>
-  <td></td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/risky-router" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>risky-router</a></td>
-  <td>This repository holds the code behind riskyrouter.com which was the joint winner of the inaugural CAS Hacktuary Challenge in 2022.</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 10</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/rp-bnn-claims" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>rp-bnn-claims</a></td>
-  <td>Individual Claims Forecasting with Bayesian Mixture Density Networks</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3D6117"></span>TeX</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 17</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 3</span></td>
-</tr>
-<tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/SEAT" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>SEAT</a></td>
   <td>Simulation Engine for Adaptive Telematics Data --  Variance 2025</td>
   <td></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/shiny_big_long" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>shiny_big_long</a></td>
-  <td></td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/stan_stans" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>stan_stans</a></td>
-  <td>Examples for and from the Stan stans study group of the CAS</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/technology_survey" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>technology_survey</a></td>
-  <td></td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#427819"></span>Makefile</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 2</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/tryangle" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>tryangle</a></td>
-  <td>Tryangle is an automatic chainladder reserving framework. It provides scoring and optimisation methods based on machine learning techniques to automatically select optimal parameters to minimise reserve prediction error. </td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 28</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 12</span></td>
 </tr>
 </tbody>
 </table>
@@ -372,10 +372,10 @@ Where a repo has a predominant language, GitHub identifies it. Of the repos with
 
 ![Repository count by predominant language](/_static/images/metrics/by_language.svg)
 
-```{rubric} Watchers
+```{rubric} Stars
 ```
 
-![Watchers per repo](/_static/images/metrics/watchers.svg)
+![Stars per repo](/_static/images/metrics/stars.svg)
 
 ```{rubric} Forks
 ```
@@ -388,7 +388,7 @@ Where a repo has a predominant language, GitHub identifies it. Of the repos with
 ```{rubric} Commits
 ```
 
-There have been 4,934 commits in total. The top ten repos by number of commits are:
+There have been 4,943 commits in total. The top ten repos by number of commits are:
 
 ```{raw} html
 <table class="cas-repo-table">
@@ -425,7 +425,7 @@ The ten most frequent contributors across all repos are:
 <tr><th>Author</th><th>Commits</th></tr>
 </thead>
 <tbody>
-<tr><td>genedan</td><td>1,702</td></tr>
+<tr><td>genedan</td><td>1,707</td></tr>
 <tr><td>jbogaardt</td><td>867</td></tr>
 <tr><td>kennethshsu</td><td>646</td></tr>
 <tr><td>ResearchActuary</td><td>194</td></tr>
