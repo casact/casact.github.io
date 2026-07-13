@@ -98,7 +98,9 @@ def build_repo_row(r: dict) -> str:
 
 
 def build_projects_table(repos: list[dict]) -> str:
-    repos_sorted = sorted(repos, key=lambda r: r["name"].lower())
+    repos_sorted = sorted(
+        repos, key=lambda r: (-r["stargazers_count"], r["name"].lower())
+    )
     rows = "\n".join(build_repo_row(r) for r in repos_sorted)
     intro = (
         f"All {len(repos)} public repositories in the "

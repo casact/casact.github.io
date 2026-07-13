@@ -277,17 +277,20 @@ def main() -> None:
         "Language",
     )
 
-    # -- Chart: watchers per repo ------------------------------------------
-    watched = sorted(
-        ((r["name"], r.get("watchers_count", 0)) for r in repos if r.get("watchers_count", 0) > 0),
+    # -- Chart: stars per repo ----------------------------------------------
+    # GitHub's REST API aliases `watchers_count` to the star count these
+    # days (real "watching" activity isn't exposed in this endpoint), so
+    # label this as stars rather than watchers.
+    starred = sorted(
+        ((r["name"], r.get("stargazers_count", 0)) for r in repos if r.get("stargazers_count", 0) > 0),
         key=lambda kv: kv[1],
     )
     save_barh(
-        IMAGES_DIR / "watchers.svg",
-        [k for k, _ in watched],
-        [v for _, v in watched],
-        "Watchers by repository",
-        "Watchers",
+        IMAGES_DIR / "stars.svg",
+        [k for k, _ in starred],
+        [v for _, v in starred],
+        "Stars by repository",
+        "Stars",
         "Repository",
     )
 
@@ -389,8 +392,8 @@ def main() -> None:
         "Where a repo has a predominant language, GitHub identifies it. Of the "
         "repos with a single predominant language, the count by language is:",
         image_md("Repository count by predominant language", "by_language.svg"),
-        rubric("Watchers"),
-        image_md("Watchers per repo", "watchers.svg"),
+        rubric("Stars"),
+        image_md("Stars per repo", "stars.svg"),
         rubric("Forks"),
         image_md("Forks per repo", "forks.svg"),
         rubric("Contributions"),

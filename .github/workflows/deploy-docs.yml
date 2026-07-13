@@ -48,7 +48,19 @@ jobs:
           git add docs/index.md docs/projects.md
           if ! git diff --cached --quiet; then
             git commit -m "Update repo listings"
-            git push
+            pushed=false
+            for i in 1 2 3 4 5; do
+              if git push; then
+                pushed=true
+                break
+              fi
+              echo "Push rejected (attempt $i/5) - rebasing onto latest main and retrying..."
+              git pull --rebase origin main
+            done
+            if [ "$pushed" != "true" ]; then
+              echo "::error::Failed to push repo listing updates after 5 attempts"
+              exit 1
+            fi
           fi
 
   update-metrics:
@@ -81,7 +93,19 @@ jobs:
           git add docs/index.md docs/projects.md docs/_static/images/metrics
           if ! git diff --cached --quiet; then
             git commit -m "Update GitHub metrics"
-            git push
+            pushed=false
+            for i in 1 2 3 4 5; do
+              if git push; then
+                pushed=true
+                break
+              fi
+              echo "Push rejected (attempt $i/5) - rebasing onto latest main and retrying..."
+              git pull --rebase origin main
+            done
+            if [ "$pushed" != "true" ]; then
+              echo "::error::Failed to push metrics updates after 5 attempts"
+              exit 1
+            fi
           fi
 
   build:
