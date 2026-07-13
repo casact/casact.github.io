@@ -372,10 +372,10 @@ Where a repo has a predominant language, GitHub identifies it. Of the repos with
 
 ![Repository count by predominant language](/_static/images/metrics/by_language.svg)
 
-```{rubric} Watchers
+```{rubric} Stars
 ```
 
-![Watchers per repo](/_static/images/metrics/watchers.svg)
+![Stars per repo](/_static/images/metrics/stars.svg)
 
 ```{rubric} Forks
 ```
@@ -388,7 +388,7 @@ Where a repo has a predominant language, GitHub identifies it. Of the repos with
 ```{rubric} Commits
 ```
 
-There have been 4,934 commits in total. The top ten repos by number of commits are:
+There have been 4,942 commits in total. The top ten repos by number of commits are:
 
 ```{raw} html
 <table class="cas-repo-table">
@@ -425,7 +425,7 @@ The ten most frequent contributors across all repos are:
 <tr><th>Author</th><th>Commits</th></tr>
 </thead>
 <tbody>
-<tr><td>genedan</td><td>1,702</td></tr>
+<tr><td>genedan</td><td>1,707</td></tr>
 <tr><td>jbogaardt</td><td>867</td></tr>
 <tr><td>kennethshsu</td><td>646</td></tr>
 <tr><td>ResearchActuary</td><td>194</td></tr>
