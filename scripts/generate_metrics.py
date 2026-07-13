@@ -8,8 +8,9 @@ Python + matplotlib port of casact/meta's git_metrics/core_metrics.Rmd
 Charts are written to docs/_static/images/metrics/. The markdown between
 the ``<!-- METRICS:START/END -->`` markers in docs/projects.md and the
 ``<!-- HEATMAP:START/END -->`` markers in docs/index.md is replaced with
-freshly generated tables and figures. Intended to be run daily (and on
-every push) by .github/workflows/update-metrics.yml.
+freshly generated tables and figures. Run as part of
+.github/workflows/deploy-docs.yml (on push, daily at 06:00 UTC, and on
+manual dispatch).
 """
 
 from __future__ import annotations
@@ -45,10 +46,14 @@ FONT_BODY = "Source Sans 3"
 FONT_HEADING = "Montserrat"
 
 # Same blues used across the site (docs/_static/css/custom.css: --cas-navy,
-# --cas-blue-light) for the contribution heatmap gradient.
+# --cas-blue-light) for the contribution heatmap gradient. The lightest stop
+# is deliberately not near-white, so active-but-quiet days stay visible
+# against the page background; zero-activity days use HEATMAP_GREY instead
+# of this colormap entirely, same as GitHub's own empty cells.
 HEATMAP_CMAP = mcolors.LinearSegmentedColormap.from_list(
-    "cas_blues", ["#eaf7fb", "#74d2e7", "#1c6ea8", "#002D72"]
+    "cas_blues", ["#bfe3f0", "#74d2e7", "#1c6ea8", "#002D72"]
 )
+HEATMAP_GREY = "#ebedf0"
 
 # Same typefaces as the site's own CSS (docs/_static/css/custom.css). These
 # are static weight instances of the variable Google Fonts files, since
@@ -126,26 +131,44 @@ def save_heatmap(path: Path, commits_by_date: dict, weeks: int = 53) -> None:
     vmax = max(1, nonzero[int(len(nonzero) * 0.95)] if nonzero else 1)
     norm = mcolors.Normalize(vmin=0, vmax=vmax, clip=True)
 
-    fig, ax = plt.subplots(figsize=(max(7, 0.16 * num_weeks), 2.8))
-    ax.scatter(xs, ys, c=counts, cmap=HEATMAP_CMAP, norm=norm, marker="s", s=38, linewidths=0)
+    y_span = 8.2 - (-1)
+    fig, ax = plt.subplots(figsize=(max(7, 0.155 * num_weeks), 0.155 * y_span + 1.1))
+    ax.set_aspect("equal")
 
-    # "Less -> More" legend, bottom-right, like GitHub's own heatmap.
-    legend_vals = [0, vmax * 0.25, vmax * 0.5, vmax * 0.75, vmax]
-    legend_x0 = num_weeks - len(legend_vals)
+    zero_xy = [(x, y) for x, y, c in zip(xs, ys, counts) if c == 0]
+    active_xy = [(x, y, c) for x, y, c in zip(xs, ys, counts) if c > 0]
+    if zero_xy:
+        zx, zy = zip(*zero_xy)
+        ax.scatter(zx, zy, color=HEATMAP_GREY, marker="s", s=72, linewidths=0)
+    if active_xy:
+        ax_, ay_, ac_ = zip(*active_xy)
+        ax.scatter(ax_, ay_, c=ac_, cmap=HEATMAP_CMAP, norm=norm, marker="s", s=72, linewidths=0)
+
+    # "Less -> More" legend, bottom-right, like GitHub's own heatmap: grey
+    # for zero activity, then the blue gradient for increasing activity.
+    legend_active_vals = [vmax * 0.25, vmax * 0.5, vmax * 0.75, vmax]
+    legend_x0 = num_weeks - len(legend_active_vals) - 1
     legend_y = 7.4
+    ax.scatter([legend_x0], [legend_y], color=HEATMAP_GREY, marker="s", s=72, linewidths=0)
     ax.scatter(
-        [legend_x0 + i for i in range(len(legend_vals))],
-        [legend_y] * len(legend_vals),
-        c=legend_vals,
+        [legend_x0 + 1 + i for i in range(len(legend_active_vals))],
+        [legend_y] * len(legend_active_vals),
+        c=legend_active_vals,
         cmap=HEATMAP_CMAP,
         norm=norm,
         marker="s",
-        s=38,
+        s=72,
         linewidths=0,
     )
     ax.text(legend_x0 - 1, legend_y, "Less", ha="right", va="center", fontsize=9, color=TEXT)
     ax.text(
-        legend_x0 + len(legend_vals), legend_y, "More", ha="left", va="center", fontsize=9, color=TEXT
+        legend_x0 + 1 + len(legend_active_vals),
+        legend_y,
+        "More",
+        ha="left",
+        va="center",
+        fontsize=9,
+        color=TEXT,
     )
 
     ax.set_ylim(-1, 8.2)
@@ -159,8 +182,10 @@ def save_heatmap(path: Path, commits_by_date: dict, weeks: int = 53) -> None:
     ax.tick_params(length=0)
     for spine in ax.spines.values():
         spine.set_visible(False)
+    total = sum(counts)
+    unit = "contribution" if total == 1 else "contributions"
     ax.set_title(
-        "Contribution activity",
+        f"{total:,} {unit} in the last year",
         fontfamily=FONT_HEADING,
         fontweight="bold",
         fontsize=13,
@@ -318,9 +343,12 @@ def main() -> None:
         INDEX_MD,
         "<!-- HEATMAP:START -->",
         "<!-- HEATMAP:END -->",
-        image_md(
-            "CAS GitHub organization contribution activity over the past year", "heatmap.svg"
-        ),
+        "```{raw} html\n"
+        '<div class="cas-heatmap-card">\n'
+        '<img alt="CAS GitHub organization contribution activity over the past year" '
+        'src="/_static/images/metrics/heatmap.svg" />\n'
+        "</div>\n"
+        "```",
     )
 
     author_counts = Counter(c[1] for c in all_commits if c[1])

@@ -8,7 +8,8 @@
   in the org (REST API).
 
 Both are regenerated between ``<!-- REPOS:START -->`` / ``<!-- REPOS:END -->``
-markers. Intended to be run daily by .github/workflows/update-repos.yml.
+markers. Run as part of .github/workflows/deploy-docs.yml (on push, daily
+at 05:00 UTC, and on manual dispatch).
 """
 
 from __future__ import annotations
