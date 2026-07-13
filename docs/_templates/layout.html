@@ -1,0 +1,13 @@
+{% extends "!layout.html" %}
+
+{# The homepage (index.md) has no real docutils heading - the hero title is
+   raw HTML, and the visible nav label comes from a toctree caption - so
+   Sphinx has nothing to derive a <title> from and falls back to
+   "<no title>". Hardcode the browser tab title for just that page. #}
+{% block htmltitle %}
+{% if pagename == "index" %}
+<title>Open-Source Projects Working Group</title>
+{% else %}
+<title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+{% endif %}
+{% endblock %}

@@ -311,12 +311,38 @@ a:hover {
   border-radius: 0.375rem;
   padding: 1rem 1.25rem;
   margin: 1.5rem 0;
+  overflow-x: auto;
 }
 
-.cas-heatmap-card img {
+.cas-heatmap-title {
+  font-family: var(--pst-font-family-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--cas-navy);
+  text-align: center;
+  margin: 0 0 0.75rem;
+}
+
+.cas-heatmap-svg {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.cas-heatmap-svg text.cas-heatmap-label {
+  font-family: var(--pst-font-family-base);
+  font-size: 9px;
+  fill: var(--pst-color-text-muted);
+}
+
+.cas-heatmap-cell {
+  cursor: default;
+  transition: stroke 0.1s ease;
+}
+
+.cas-heatmap-cell:hover {
+  stroke: var(--cas-navy);
+  stroke-width: 1.5;
 }
 
 /* -- Section band using the pale-blue tint seen on casact.org -- */

@@ -5,8 +5,12 @@ contribution heatmap, from live GitHub data.
 Python + matplotlib port of casact/meta's git_metrics/core_metrics.Rmd
 (https://github.com/casact/meta/blob/master/git_metrics/core_metrics.Rmd).
 
-Charts are written to docs/_static/images/metrics/. The markdown between
-the ``<!-- METRICS:START/END -->`` markers in docs/projects.md and the
+Matplotlib charts are written to docs/_static/images/metrics/; the
+contribution heatmap is hand-built inline SVG instead (see
+build_heatmap_svg), so its cells can carry native tooltips and respond to
+CSS :hover - both are impossible for a chart embedded via <img>, which
+sandboxes the SVG from the page entirely. The markdown between the
+``<!-- METRICS:START/END -->`` markers in docs/projects.md and the
 ``<!-- HEATMAP:START/END -->`` markers in docs/index.md is replaced with
 freshly generated tables and figures. Run as part of
 .github/workflows/deploy-docs.yml (on push, daily at 06:00 UTC, and on
@@ -23,7 +27,6 @@ from pathlib import Path
 import matplotlib
 
 matplotlib.use("Agg")
-import matplotlib.colors as mcolors
 import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 
@@ -46,13 +49,10 @@ FONT_BODY = "Source Sans 3"
 FONT_HEADING = "Montserrat"
 
 # Same blues used across the site (docs/_static/css/custom.css: --cas-navy,
-# --cas-blue-light) for the contribution heatmap gradient. The lightest stop
-# is deliberately not near-white, so active-but-quiet days stay visible
-# against the page background; zero-activity days use HEATMAP_GREY instead
-# of this colormap entirely, same as GitHub's own empty cells.
-HEATMAP_CMAP = mcolors.LinearSegmentedColormap.from_list(
-    "cas_blues", ["#bfe3f0", "#74d2e7", "#1c6ea8", "#002D72"]
-)
+# --cas-blue-light) for the contribution heatmap. The lightest stop is
+# deliberately not near-white, so active-but-quiet days stay visible against
+# the page background; zero-activity days use HEATMAP_GREY instead, same as
+# GitHub's own empty cells.
 HEATMAP_GREY = "#ebedf0"
 
 # Same typefaces as the site's own CSS (docs/_static/css/custom.css). These
@@ -108,94 +108,120 @@ def save_barh(
     plt.close(fig)
 
 
-def save_heatmap(path: Path, commits_by_date: dict, weeks: int = 53) -> None:
-    """A GitHub-style contribution calendar, colored with the site's blues."""
+def _ordinal(n: int) -> str:
+    if 11 <= (n % 100) <= 13:
+        suffix = "th"
+    else:
+        suffix = {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    return f"{n}{suffix}"
+
+
+def _heatmap_tooltip(d: date, count: int) -> str:
+    when = f"{d.strftime('%B')} {_ordinal(d.day)}"
+    if count == 0:
+        return f"No contributions on {when}."
+    unit = "contribution" if count == 1 else "contributions"
+    return f"{count} {unit} on {when}."
+
+
+HEATMAP_BUCKET_COLORS = ["#bfe3f0", "#74d2e7", "#1c6ea8", "#002D72"]
+
+
+def build_heatmap_svg(commits_by_date: dict, weeks: int = 53) -> tuple[str, int]:
+    """A GitHub-style contribution calendar as hand-built inline SVG.
+
+    This is embedded directly in docs/index.md rather than saved as a file
+    and loaded via <img>, because <img>-embedded SVGs are sandboxed from the
+    page's CSS/JS entirely - neither :hover styling nor a native per-cell
+    <title> tooltip (GitHub's "n contributions on <date>") works otherwise.
+
+    Returns (svg_markup, total_contributions_in_window).
+    """
     end = date.today()
     start = end - timedelta(weeks=weeks)
     start -= timedelta(days=(start.weekday() + 1) % 7)  # snap back to a Sunday
 
-    xs, ys, counts = [], [], []
+    cell, gap = 11, 3
+    pitch = cell + gap
+    left_pad, top_pad, bottom_pad = 28, 20, 24
+
+    days = []
     month_ticks: dict[int, str] = {}
     for i in range((end - start).days + 1):
         d = start + timedelta(days=i)
         week_idx = (d - start).days // 7
         dow = (d.weekday() + 1) % 7  # Sunday=0 .. Saturday=6
-        xs.append(week_idx)
-        ys.append(dow)
-        counts.append(commits_by_date.get(d, 0))
+        count = commits_by_date.get(d, 0)
+        days.append((d, week_idx, dow, count))
         if d.day <= 7 and dow == 0:
             month_ticks[week_idx] = d.strftime("%b")
-    num_weeks = max(xs) + 1
+    num_weeks = max(w for _, w, _, _ in days) + 1
+    total = sum(c for _, _, _, c in days)
 
-    nonzero = sorted(c for c in counts if c > 0)
+    nonzero = sorted(c for _, _, _, c in days if c > 0)
     vmax = max(1, nonzero[int(len(nonzero) * 0.95)] if nonzero else 1)
-    norm = mcolors.Normalize(vmin=0, vmax=vmax, clip=True)
 
-    y_span = 8.2 - (-1)
-    fig, ax = plt.subplots(figsize=(max(7, 0.155 * num_weeks), 0.155 * y_span + 1.1))
-    ax.set_aspect("equal")
+    def color_for(count: int) -> str:
+        if count <= 0:
+            return HEATMAP_GREY
+        frac = count / vmax
+        if frac <= 0.25:
+            return HEATMAP_BUCKET_COLORS[0]
+        if frac <= 0.5:
+            return HEATMAP_BUCKET_COLORS[1]
+        if frac <= 0.75:
+            return HEATMAP_BUCKET_COLORS[2]
+        return HEATMAP_BUCKET_COLORS[3]
 
-    zero_xy = [(x, y) for x, y, c in zip(xs, ys, counts) if c == 0]
-    active_xy = [(x, y, c) for x, y, c in zip(xs, ys, counts) if c > 0]
-    if zero_xy:
-        zx, zy = zip(*zero_xy)
-        ax.scatter(zx, zy, color=HEATMAP_GREY, marker="s", s=72, linewidths=0)
-    if active_xy:
-        ax_, ay_, ac_ = zip(*active_xy)
-        ax.scatter(ax_, ay_, c=ac_, cmap=HEATMAP_CMAP, norm=norm, marker="s", s=72, linewidths=0)
+    width = left_pad + num_weeks * pitch
+    height = top_pad + 7 * pitch + bottom_pad
 
-    # "Less -> More" legend, bottom-right, like GitHub's own heatmap: grey
-    # for zero activity, then the blue gradient for increasing activity.
-    legend_active_vals = [vmax * 0.25, vmax * 0.5, vmax * 0.75, vmax]
-    legend_x0 = num_weeks - len(legend_active_vals) - 1
-    legend_y = 7.4
-    ax.scatter([legend_x0], [legend_y], color=HEATMAP_GREY, marker="s", s=72, linewidths=0)
-    ax.scatter(
-        [legend_x0 + 1 + i for i in range(len(legend_active_vals))],
-        [legend_y] * len(legend_active_vals),
-        c=legend_active_vals,
-        cmap=HEATMAP_CMAP,
-        norm=norm,
-        marker="s",
-        s=72,
-        linewidths=0,
+    parts = [
+        f'<svg class="cas-heatmap-svg" viewBox="0 0 {width} {height}" '
+        f'xmlns="http://www.w3.org/2000/svg" role="img" '
+        f'aria-label="Contribution activity calendar">'
+    ]
+
+    for week_idx, label in month_ticks.items():
+        x = left_pad + week_idx * pitch
+        parts.append(f'<text x="{x}" y="{top_pad - 8}" class="cas-heatmap-label">{label}</text>')
+
+    for dow, label in [(1, "Mon"), (3, "Wed"), (5, "Fri")]:
+        y = top_pad + dow * pitch + cell - 1
+        parts.append(
+            f'<text x="{left_pad - 6}" y="{y}" text-anchor="end" '
+            f'class="cas-heatmap-label">{label}</text>'
+        )
+
+    for d, week_idx, dow, count in days:
+        x = left_pad + week_idx * pitch
+        y = top_pad + dow * pitch
+        parts.append(
+            f'<rect class="cas-heatmap-cell" x="{x}" y="{y}" width="{cell}" height="{cell}" '
+            f'rx="2" ry="2" fill="{color_for(count)}"><title>{_heatmap_tooltip(d, count)}'
+            f"</title></rect>"
+        )
+
+    # "Less -> More" legend, bottom-right, like GitHub's own heatmap.
+    legend_colors = [HEATMAP_GREY] + HEATMAP_BUCKET_COLORS
+    legend_y = top_pad + 7 * pitch + 10
+    legend_x0 = width - len(legend_colors) * pitch - 32
+    parts.append(
+        f'<text x="{legend_x0 - 6}" y="{legend_y + cell - 1}" text-anchor="end" '
+        f'class="cas-heatmap-label">Less</text>'
     )
-    ax.text(legend_x0 - 1, legend_y, "Less", ha="right", va="center", fontsize=9, color=TEXT)
-    ax.text(
-        legend_x0 + 1 + len(legend_active_vals),
-        legend_y,
-        "More",
-        ha="left",
-        va="center",
-        fontsize=9,
-        color=TEXT,
+    for i, color in enumerate(legend_colors):
+        x = legend_x0 + i * pitch
+        parts.append(
+            f'<rect x="{x}" y="{legend_y}" width="{cell}" height="{cell}" '
+            f'rx="2" ry="2" fill="{color}"></rect>'
+        )
+    parts.append(
+        f'<text x="{legend_x0 + len(legend_colors) * pitch + 4}" y="{legend_y + cell - 1}" '
+        f'class="cas-heatmap-label">More</text>'
     )
-
-    ax.set_ylim(-1, 8.2)
-    ax.set_xlim(-1, num_weeks)
-    ax.invert_yaxis()
-    ax.set_yticks([1, 3, 5])
-    ax.set_yticklabels(["Mon", "Wed", "Fri"])
-    ax.set_xticks(list(month_ticks.keys()))
-    ax.set_xticklabels(list(month_ticks.values()))
-    ax.xaxis.tick_top()
-    ax.tick_params(length=0)
-    for spine in ax.spines.values():
-        spine.set_visible(False)
-    total = sum(counts)
-    unit = "contribution" if total == 1 else "contributions"
-    ax.set_title(
-        f"{total:,} {unit} in the last year",
-        fontfamily=FONT_HEADING,
-        fontweight="bold",
-        fontsize=13,
-        color=NAVY,
-        loc="center",
-        pad=12,
-    )
-    fig.tight_layout()
-    fig.savefig(path, **SAVEFIG_KWARGS)
-    plt.close(fig)
+    parts.append("</svg>")
+    return "".join(parts), total
 
 
 def replace_between_markers(path: Path, start_marker: str, end_marker: str, generated: str) -> None:
@@ -341,15 +367,16 @@ def main() -> None:
     fig.savefig(IMAGES_DIR / "cumulative_commits.svg", **SAVEFIG_KWARGS)
     plt.close(fig)
 
-    save_heatmap(IMAGES_DIR / "heatmap.svg", commits_by_date)
+    heatmap_svg, heatmap_total = build_heatmap_svg(commits_by_date)
+    heatmap_unit = "contribution" if heatmap_total == 1 else "contributions"
     replace_between_markers(
         INDEX_MD,
         "<!-- HEATMAP:START -->",
         "<!-- HEATMAP:END -->",
         "```{raw} html\n"
         '<div class="cas-heatmap-card">\n'
-        '<img alt="CAS GitHub organization contribution activity over the past year" '
-        'src="/_static/images/metrics/heatmap.svg" />\n'
+        f'<p class="cas-heatmap-title">{heatmap_total:,} {heatmap_unit} in the last year</p>\n'
+        f"{heatmap_svg}\n"
         "</div>\n"
         "```",
     )
