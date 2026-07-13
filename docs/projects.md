@@ -388,7 +388,7 @@ Where a repo has a predominant language, GitHub identifies it. Of the repos with
 ```{rubric} Commits
 ```
 
-There have been 4,946 commits in total. The top ten repos by number of commits are:
+There have been 4,947 commits in total. The top ten repos by number of commits are:
 
 ```{raw} html
 <table class="cas-repo-table">
