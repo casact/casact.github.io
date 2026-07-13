@@ -72,8 +72,15 @@ plt.rcParams.update(
         "text.color": TEXT,
         "xtick.color": TEXT,
         "ytick.color": TEXT,
+        # Sphinx embeds these via <img>, which sandboxes the SVG from the
+        # page's own stylesheet/fonts - a font-family reference alone won't
+        # resolve there, so bake the glyphs in as vector outlines instead.
+        # Still crisp at any zoom/DPI, unlike a raster PNG.
+        "svg.fonttype": "path",
     }
 )
+
+SAVEFIG_KWARGS = {"transparent": True}
 
 
 def style_axes(ax, title: str, xlabel: str, ylabel: str) -> None:
@@ -92,7 +99,7 @@ def save_barh(
     ax.barh(labels, values, color=NAVY)
     style_axes(ax, title, xlabel, ylabel)
     fig.tight_layout()
-    fig.savefig(path, dpi=150)
+    fig.savefig(path, **SAVEFIG_KWARGS)
     plt.close(fig)
 
 
@@ -162,7 +169,7 @@ def save_heatmap(path: Path, commits_by_date: dict, weeks: int = 53) -> None:
         pad=12,
     )
     fig.tight_layout()
-    fig.savefig(path, dpi=150)
+    fig.savefig(path, **SAVEFIG_KWARGS)
     plt.close(fig)
 
 
@@ -230,14 +237,14 @@ def main() -> None:
     ax.set_ylim(bottom=0)
     style_axes(ax, "Cumulative repository count", "Date", "Number of repositories")
     fig.tight_layout()
-    fig.savefig(IMAGES_DIR / "repo_growth.png", dpi=150)
+    fig.savefig(IMAGES_DIR / "repo_growth.svg", **SAVEFIG_KWARGS)
     plt.close(fig)
 
     # -- Chart: repo count by predominant language ------------------------
     lang_counts = Counter(r["language"] for r in repos if r.get("language"))
     items = sorted(lang_counts.items(), key=lambda kv: kv[1])
     save_barh(
-        IMAGES_DIR / "by_language.png",
+        IMAGES_DIR / "by_language.svg",
         [k for k, _ in items],
         [v for _, v in items],
         "Repositories by language",
@@ -251,7 +258,7 @@ def main() -> None:
         key=lambda kv: kv[1],
     )
     save_barh(
-        IMAGES_DIR / "watchers.png",
+        IMAGES_DIR / "watchers.svg",
         [k for k, _ in watched],
         [v for _, v in watched],
         "Watchers by repository",
@@ -265,7 +272,7 @@ def main() -> None:
         key=lambda kv: kv[1],
     )
     save_barh(
-        IMAGES_DIR / "forks.png",
+        IMAGES_DIR / "forks.svg",
         [k for k, _ in forked],
         [v for _, v in forked],
         "Forks by repository",
@@ -303,16 +310,16 @@ def main() -> None:
     ax.plot(xs2, ys2, color=NAVY, linewidth=1.5)
     style_axes(ax, "Cumulative commits over time", "Date", "Cumulative commits")
     fig.tight_layout()
-    fig.savefig(IMAGES_DIR / "cumulative_commits.png", dpi=150)
+    fig.savefig(IMAGES_DIR / "cumulative_commits.svg", **SAVEFIG_KWARGS)
     plt.close(fig)
 
-    save_heatmap(IMAGES_DIR / "heatmap.png", commits_by_date)
+    save_heatmap(IMAGES_DIR / "heatmap.svg", commits_by_date)
     replace_between_markers(
         INDEX_MD,
         "<!-- HEATMAP:START -->",
         "<!-- HEATMAP:END -->",
         image_md(
-            "CAS GitHub organization contribution activity over the past year", "heatmap.png"
+            "CAS GitHub organization contribution activity over the past year", "heatmap.svg"
         ),
     )
 
@@ -349,15 +356,15 @@ def main() -> None:
         "organization. The count begins at ten repos as of the account's "
         "creation in August 2019, since several pre-existing repos were "
         "transferred in from other owners at that time.",
-        image_md("Cumulative repository count over time", "repo_growth.png"),
+        image_md("Cumulative repository count over time", "repo_growth.svg"),
         rubric("By language"),
         "Where a repo has a predominant language, GitHub identifies it. Of the "
         "repos with a single predominant language, the count by language is:",
-        image_md("Repository count by predominant language", "by_language.png"),
+        image_md("Repository count by predominant language", "by_language.svg"),
         rubric("Watchers"),
-        image_md("Watchers per repo", "watchers.png"),
+        image_md("Watchers per repo", "watchers.svg"),
         rubric("Forks"),
-        image_md("Forks per repo", "forks.png"),
+        image_md("Forks per repo", "forks.svg"),
         rubric("Contributions"),
         rubric("Commits"),
         f"There have been {fmt(total_commits)} commits in total. The top ten "
@@ -366,7 +373,7 @@ def main() -> None:
         + html_table(["Repo", "Total commits"], [(n, fmt(c)) for n, c in top_repos])
         + "\n```",
         "The cumulative growth of commits over time has been:",
-        image_md("Cumulative commits over time", "cumulative_commits.png"),
+        image_md("Cumulative commits over time", "cumulative_commits.svg"),
         rubric("Committers"),
         "The ten most frequent contributors across all repos are:",
         "```{raw} html\n"

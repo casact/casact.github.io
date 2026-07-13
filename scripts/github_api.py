@@ -4,11 +4,14 @@ from __future__ import annotations
 
 import os
 import re
+import sys
+import time
 from datetime import date, datetime
 
 import requests
 
 ORG = "casact"
+MAX_RETRIES = 5
 
 SESSION = requests.Session()
 SESSION.headers["Accept"] = "application/vnd.github+json"
@@ -32,12 +35,58 @@ LANGUAGE_COLORS = {
 DEFAULT_LANGUAGE_COLOR = "#8a8a8a"
 
 
+def _request_with_retries(method: str, url: str, **kwargs) -> requests.Response:
+    """Issue a request, retrying transient failures (rate limits, 5xx, network
+    blips) with backoff. GitHub Actions triggers this script on every push,
+    so transient hiccups are common enough to be worth absorbing here rather
+    than failing the whole workflow run.
+    """
+    last_exc = None
+    for attempt in range(MAX_RETRIES):
+        try:
+            resp = SESSION.request(method, url, timeout=30, **kwargs)
+        except requests.exceptions.RequestException as exc:
+            last_exc = exc
+            wait = 2**attempt * 5
+            print(f"  {exc!r}, retrying in {wait}s...", file=sys.stderr)
+            time.sleep(wait)
+            continue
+
+        if resp.status_code == 409:
+            return resp
+        if resp.status_code in (403, 429):
+            if resp.headers.get("X-RateLimit-Remaining") == "0":
+                wait = max(1, int(resp.headers.get("X-RateLimit-Reset", 0)) - time.time()) + 2
+            else:
+                wait = int(resp.headers.get("Retry-After", 2**attempt * 10))
+            print(
+                f"  rate limited (status {resp.status_code}), waiting {wait:.0f}s "
+                f"before retry {attempt + 1}/{MAX_RETRIES}...",
+                file=sys.stderr,
+            )
+            time.sleep(wait)
+            continue
+        if resp.status_code >= 500:
+            wait = 2**attempt * 5
+            print(
+                f"  server error {resp.status_code}, retrying in {wait}s...", file=sys.stderr
+            )
+            time.sleep(wait)
+            continue
+        return resp
+
+    if last_exc:
+        raise last_exc
+    resp.raise_for_status()
+    return resp
+
+
 def api_get_paginated(url: str) -> list:
     """GET all pages of a REST list endpoint. Returns [] for an empty repo (409)."""
     results = []
     page = 1
     while True:
-        resp = SESSION.get(url, params={"per_page": 100, "page": page}, timeout=30)
+        resp = _request_with_retries("GET", url, params={"per_page": 100, "page": page})
         if resp.status_code == 409:
             return []
         resp.raise_for_status()
@@ -64,10 +113,10 @@ def parse_date(timestamp: str) -> date:
 def graphql(query: str, variables: dict | None = None) -> dict:
     if not TOKEN:
         raise RuntimeError("GITHUB_TOKEN is required for GraphQL requests")
-    resp = SESSION.post(
+    resp = _request_with_retries(
+        "POST",
         "https://api.github.com/graphql",
         json={"query": query, "variables": variables or {}},
-        timeout=30,
     )
     resp.raise_for_status()
     payload = resp.json()
@@ -126,10 +175,10 @@ def fetch_pinned_repos(org: str = ORG) -> list[dict]:
 def _scrape_pinned_repos(org: str) -> list[dict]:
     # This is a plain HTML page, not the REST API, so it needs browser-like
     # headers rather than the session's default `application/vnd.github+json`.
-    resp = requests.get(
+    resp = _request_with_retries(
+        "GET",
         f"https://github.com/{org}",
         headers={"User-Agent": "Mozilla/5.0", "Accept": "text/html"},
-        timeout=30,
     )
     resp.raise_for_status()
     html = resp.text
