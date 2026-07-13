@@ -1,0 +1,320 @@
+/* ==========================================================================
+   Casualty Actuarial Society brand theme for pydata-sphinx-theme
+   Colors, fonts, and logo pulled from casact.org
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --cas-navy: #002d72;
+  --cas-navy-dark: #0c2340;
+  --cas-navy-darker: #142345;
+  --cas-gold: #ffb81c;
+  --cas-blue-light: #74d2e7;
+  --cas-blue-pale: #e2f4f6;
+  --cas-cream: #f0ece8;
+  --cas-grey: #858ea0;
+
+  --pst-font-family-base: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --pst-font-family-heading: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+
+html[data-theme="light"],
+html[data-theme="dark"] {
+  --pst-color-primary: var(--cas-navy);
+  --pst-color-secondary: var(--cas-gold);
+  --pst-color-accent: var(--cas-gold);
+  --pst-color-link: var(--cas-navy);
+  --pst-color-link-hover: var(--cas-gold);
+  --pst-color-inline-code: var(--cas-navy-darker);
+  --pst-color-surface: #ffffff;
+  --pst-color-on-background: #ffffff;
+  --pst-color-background: #ffffff;
+  --pst-color-text-base: #1c2531;
+  --pst-color-border: var(--cas-cream);
+
+  /* casact.org's own navy bar is a compact ~60px; the theme default (4rem
+     row height alone) renders much taller, so trim it down to match. */
+  --pst-header-height: 2.75rem;
+}
+
+body {
+  font-family: var(--pst-font-family-base);
+}
+
+h1, h2, h3, h4, h5, h6,
+.bd-toc-item, .sidebar-primary-item,
+.bd-sidebar-primary .current > a {
+  font-family: var(--pst-font-family-heading);
+}
+
+h1, h2, h3 {
+  color: var(--cas-navy);
+  font-weight: 700;
+}
+
+a {
+  color: var(--cas-navy);
+}
+a:hover {
+  color: var(--cas-gold);
+}
+
+/* -- Top navbar: navy bar, like casact.org header -- */
+.bd-header {
+  background-color: var(--cas-navy) !important;
+  box-shadow: none;
+}
+
+.bd-header .bd-header__inner {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  min-height: 0;
+  overflow: visible;
+}
+
+.bd-header .navbar-brand.logo {
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 0;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+}
+
+.bd-header .navbar-header-items__start,
+.bd-header .navbar-header-items__start .navbar-item {
+  overflow: visible;
+}
+
+.bd-header .logo__text {
+  display: none;
+}
+
+.bd-header .navbar-header-items,
+.bd-header .navbar-nav .nav-link,
+.bd-header .navbar-item,
+.bd-header .bd-navbar-elements > li > a,
+.bd-header .navbar-icon-links a,
+.bd-header .search-button-field {
+  color: #ffffff !important;
+}
+
+.bd-header .navbar-nav .nav-link:hover,
+.bd-header .navbar-icon-links a:hover,
+.bd-header .navbar-icon-links a:hover svg {
+  color: var(--cas-gold) !important;
+}
+
+.bd-header .navbar-nav > .active > .nav-link,
+.bd-header .navbar-nav .nav-link.active {
+  color: var(--cas-gold) !important;
+  font-weight: 600;
+}
+
+/* The "self" toctree entry (always first) is used only to label the site
+   section - it isn't meant to be a clickable link, so present it as plain
+   descriptive text. The section pages that follow stay normal links. */
+.bd-header .navbar-header-items__center .nav-item:first-child .nav-link {
+  pointer-events: none;
+  cursor: default;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-right: 2rem;
+}
+
+.bd-header .navbar-header-items__center .nav-item:first-child .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.bd-header .navbar-icon-links a svg,
+.bd-header svg {
+  color: #ffffff;
+}
+
+.bd-header .search-button__default-text::after {
+  color: var(--cas-blue-light);
+}
+
+/* Logo sizing to match the horizontal CAS wordmark proportions. The theme
+   otherwise forces the image to 100% of the (compact) row height; overriding
+   to `height: auto` lets max-height govern so the logo can be larger than
+   the bar itself, the way it is on casact.org. */
+.navbar-brand img,
+.bd-header .navbar-logo {
+  height: auto !important;
+  max-height: 5rem;
+  width: auto;
+}
+
+/* -- Buttons -- */
+.btn-primary,
+.sd-btn-primary {
+  background-color: var(--cas-navy);
+  border-color: var(--cas-navy);
+  font-family: var(--pst-font-family-heading);
+  font-weight: 600;
+}
+.btn-primary:hover,
+.sd-btn-primary:hover {
+  background-color: var(--cas-gold);
+  border-color: var(--cas-gold);
+  color: var(--cas-navy);
+}
+
+/* -- Admonitions / cards accent -- */
+.sd-card {
+  border-top: 3px solid var(--cas-navy);
+}
+
+.sd-card-title {
+  padding-bottom: 0.65rem;
+  margin-bottom: 0.65rem;
+  border-bottom: 1px solid var(--sd-color-card-border);
+}
+
+/* -- Repo icon in front of the card title -- */
+.cas-repo-icon {
+  vertical-align: -0.15em;
+  margin-right: 0.4rem;
+  color: var(--cas-navy);
+}
+
+/* -- GitHub-style repo card footer: language dot, stars, forks -- */
+.sd-card-footer {
+  background: transparent;
+  border-top: none;
+  padding-top: 0;
+}
+
+.cas-repo-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.875rem;
+  font-family: var(--pst-font-family-base);
+  color: var(--pst-color-text-muted);
+}
+
+.cas-repo-lang {
+  display: inline-flex;
+  align-items: center;
+}
+
+.cas-lang-dot {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin-right: 0.35rem;
+}
+
+.cas-repo-stat i {
+  margin-right: 0.3rem;
+}
+
+/* -- Full org repo listing table (Projects page) -- */
+.cas-repo-table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.cas-repo-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.cas-repo-table th {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  background-color: var(--cas-navy);
+  color: #ffffff;
+  font-family: var(--pst-font-family-heading);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cas-repo-table th:first-child {
+  border-top-left-radius: 0.25rem;
+}
+
+.cas-repo-table th:last-child {
+  border-top-right-radius: 0.25rem;
+}
+
+.cas-repo-table td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--sd-color-card-border);
+  vertical-align: middle;
+}
+
+.cas-repo-table tbody tr:hover {
+  background-color: var(--cas-blue-pale);
+}
+
+.cas-repo-name a {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--cas-navy);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cas-repo-name a:hover {
+  color: var(--cas-gold);
+}
+
+.cas-repo-table .cas-repo-lang,
+.cas-repo-table .cas-repo-stat {
+  font-size: 0.85rem;
+  color: var(--pst-color-text-muted);
+  white-space: nowrap;
+}
+
+/* -- Hero banner for the landing page -- */
+.cas-hero {
+  background: linear-gradient(135deg, var(--cas-navy) 0%, var(--cas-navy-dark) 100%);
+  color: #ffffff;
+  padding: 4rem 3rem;
+  margin: -2rem -3rem 2.5rem -3rem;
+  border-bottom: 4px solid var(--cas-gold);
+}
+
+.cas-hero h1 {
+  color: #ffffff;
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.cas-hero p {
+  color: var(--cas-blue-pale);
+  font-size: 1.25rem;
+  max-width: 40rem;
+}
+
+.cas-hero .cas-accent {
+  color: var(--cas-gold);
+}
+
+/* -- Section band using the pale-blue tint seen on casact.org -- */
+.cas-band {
+  background-color: var(--cas-blue-pale);
+  padding: 2.5rem 3rem;
+  margin: 2.5rem -3rem;
+}
+
+/* -- Footer -- */
+.bd-footer {
+  background-color: var(--cas-navy-dark);
+  color: #ffffff;
+}
+.bd-footer a {
+  color: var(--cas-blue-light);
+}
+.bd-footer a:hover {
+  color: var(--cas-gold);
+}
