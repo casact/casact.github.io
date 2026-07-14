@@ -388,7 +388,7 @@ Where a repo has a predominant language, GitHub identifies it. Of the repos with
 ```{rubric} Commits
 ```
 
-There have been 4,957 commits in total. The top ten repos by number of commits are:
+There have been 4,960 commits in total. The top ten repos by number of commits are:
 
 ```{raw} html
 <table class="cas-repo-table">
@@ -425,7 +425,7 @@ The ten most frequent contributors across all repos are:
 <tr><th>Author</th><th>Commits</th></tr>
 </thead>
 <tbody>
-<tr><td>genedan</td><td>1,713</td></tr>
+<tr><td>genedan</td><td>1,715</td></tr>
 <tr><td>jbogaardt</td><td>867</td></tr>
 <tr><td>kennethshsu</td><td>646</td></tr>
 <tr><td>ResearchActuary</td><td>194</td></tr>
@@ -464,7 +464,7 @@ Authors who have worked across multiple repositories:
 ```{rubric} Pull requests
 ```
 
-Pull requests take place when a GitHub user submits an improvement or correction to be considered by the maintainer of a repo. There have been 582 pull requests in total. The top ten repos by number of pull requests are:
+Pull requests take place when a GitHub user submits an improvement or correction to be considered by the maintainer of a repo. There have been 583 pull requests in total. The top ten repos by number of pull requests are:
 
 ```{raw} html
 <table class="cas-repo-table">
@@ -472,7 +472,7 @@ Pull requests take place when a GitHub user submits an improvement or correction
 <tr><th>Repo</th><th>Total pull requests</th></tr>
 </thead>
 <tbody>
-<tr><td>chainladder-python</td><td>505</td></tr>
+<tr><td>chainladder-python</td><td>506</td></tr>
 <tr><td>rp-bnn-claims</td><td>17</td></tr>
 <tr><td>pull_request_tutorial</td><td>12</td></tr>
 <tr><td>git-your-act-uary-together</td><td>11</td></tr>
