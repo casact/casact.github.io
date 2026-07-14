@@ -31,7 +31,13 @@ import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from github_api import fetch_commits, fetch_org_repos, parse_date  # noqa: E402
+from github_api import (  # noqa: E402
+    fetch_closed_issues,
+    fetch_commits,
+    fetch_org_repos,
+    fetch_pull_requests,
+    parse_date,
+)
 
 ACCOUNT_ESTABLISHED = date(2019, 8, 1)
 
@@ -393,6 +399,70 @@ def main() -> None:
         key=lambda kv: -kv[1],
     )[:10]
 
+    # -- Pull requests --------------------------------------------------------
+    print("Fetching pull requests for all repos...", file=sys.stderr)
+    all_prs = []  # (repo, created_date)
+    for r in repos:
+        name = r["name"]
+        prs = fetch_pull_requests(name)
+        for pr in prs:
+            all_prs.append((name, parse_date(pr["created_at"])))
+        print(f"  {name}: {len(prs)} pull requests", file=sys.stderr)
+
+    total_prs = len(all_prs)
+
+    prs_by_repo = Counter(p[0] for p in all_prs)
+    top_pr_repos = prs_by_repo.most_common(10)
+
+    prs_by_date = Counter(p[1] for p in all_prs)
+    cum = 0
+    cum_prs_by_date = {}
+    for d in sorted(prs_by_date):
+        cum += prs_by_date[d]
+        cum_prs_by_date[d] = cum
+    xs3 = [d for d in sorted(cum_prs_by_date) if d > ACCOUNT_ESTABLISHED]
+    ys3 = [cum_prs_by_date[d] for d in xs3]
+
+    fig, ax = plt.subplots(figsize=(7, 5))
+    ax.plot(xs3, ys3, color=NAVY, linewidth=1.5)
+    style_axes(ax, "Cumulative pull requests over time", "Date", "Cumulative pull requests")
+    fig.tight_layout()
+    fig.savefig(IMAGES_DIR / "cumulative_prs.svg", **SAVEFIG_KWARGS)
+    plt.close(fig)
+
+    # -- Issues closed --------------------------------------------------------
+    print("Fetching closed issues for all repos...", file=sys.stderr)
+    all_closed_issues = []  # (repo, closed_date)
+    for r in repos:
+        name = r["name"]
+        issues = fetch_closed_issues(name)
+        for issue in issues:
+            closed_at = issue.get("closed_at")
+            if closed_at:
+                all_closed_issues.append((name, parse_date(closed_at)))
+        print(f"  {name}: {len(issues)} closed issues", file=sys.stderr)
+
+    total_closed_issues = len(all_closed_issues)
+
+    closed_issues_by_repo = Counter(i[0] for i in all_closed_issues)
+    top_issue_repos = closed_issues_by_repo.most_common(10)
+
+    closed_issues_by_date = Counter(i[1] for i in all_closed_issues)
+    cum = 0
+    cum_issues_by_date = {}
+    for d in sorted(closed_issues_by_date):
+        cum += closed_issues_by_date[d]
+        cum_issues_by_date[d] = cum
+    xs4 = [d for d in sorted(cum_issues_by_date) if d > ACCOUNT_ESTABLISHED]
+    ys4 = [cum_issues_by_date[d] for d in xs4]
+
+    fig, ax = plt.subplots(figsize=(7, 5))
+    ax.plot(xs4, ys4, color=NAVY, linewidth=1.5)
+    style_axes(ax, "Cumulative issues closed over time", "Date", "Cumulative issues closed")
+    fig.tight_layout()
+    fig.savefig(IMAGES_DIR / "cumulative_issues_closed.svg", **SAVEFIG_KWARGS)
+    plt.close(fig)
+
     # -- Render markdown ------------------------------------------------------
     def fmt(n: int) -> str:
         return f"{n:,}"
@@ -443,15 +513,30 @@ def main() -> None:
         + "\n```",
         rubric("Pull requests"),
         "Pull requests take place when a GitHub user submits an improvement or "
-        "correction to be considered by the maintainer of a repo. Metrics "
-        "coming soon.",
+        "correction to be considered by the maintainer of a repo. There have "
+        f"been {fmt(total_prs)} pull requests in total. The top ten repos by "
+        "number of pull requests are:",
+        "```{raw} html\n"
+        + html_table(["Repo", "Total pull requests"], [(n, fmt(c)) for n, c in top_pr_repos])
+        + "\n```",
+        "The cumulative growth of pull requests over time has been:",
+        image_md("Cumulative pull requests over time", "cumulative_prs.svg"),
+        rubric("Issues closed"),
+        f"There have been {fmt(total_closed_issues)} issues closed in total. "
+        "The top ten repos by number of issues closed are:",
+        "```{raw} html\n"
+        + html_table(["Repo", "Issues closed"], [(n, fmt(c)) for n, c in top_issue_repos])
+        + "\n```",
+        "The cumulative growth of issues closed over time has been:",
+        image_md("Cumulative issues closed over time", "cumulative_issues_closed.svg"),
     ]
     generated = "\n\n".join(blocks)
 
     replace_between_markers(PROJECTS_MD, "<!-- METRICS:START -->", "<!-- METRICS:END -->", generated)
     print(
         f"Updated {PROJECTS_MD.name} and {INDEX_MD.name}: "
-        f"{total_commits} commits across {repo_count} repos.",
+        f"{total_commits} commits, {total_prs} pull requests, and "
+        f"{total_closed_issues} issues closed across {repo_count} repos.",
         file=sys.stderr,
     )
 

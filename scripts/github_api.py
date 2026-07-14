@@ -106,6 +106,22 @@ def fetch_commits(repo_name: str, org: str = ORG) -> list:
     return api_get_paginated(f"https://api.github.com/repos/{org}/{repo_name}/commits")
 
 
+def fetch_pull_requests(repo_name: str, org: str = ORG) -> list:
+    """All pull requests (open, closed, and merged) for a repo."""
+    return api_get_paginated(f"https://api.github.com/repos/{org}/{repo_name}/pulls?state=all")
+
+
+def fetch_closed_issues(repo_name: str, org: str = ORG) -> list:
+    """Closed issues for a repo, excluding pull requests.
+
+    GitHub's issues endpoint also returns pull requests (a PR is internally
+    just an issue with extra data), each carrying a `pull_request` key that
+    plain issues don't have - filter those out to get true issues only.
+    """
+    items = api_get_paginated(f"https://api.github.com/repos/{org}/{repo_name}/issues?state=closed")
+    return [i for i in items if "pull_request" not in i]
+
+
 def parse_date(timestamp: str) -> date:
     return datetime.strptime(timestamp, "%Y-%m-%dT%H:%M:%SZ").date()
 
