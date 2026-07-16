@@ -5,7 +5,7 @@ members and the broader actuarial community.
 
 ## Joining an Existing Project on CAS GitHub
 
-- We have an active working group that works on various projects related to open source. Please  check the [About](about.md) page with more information.
+- We have an active working group that works on various projects related to open source. Please check the [About](about.md) page for more information.
 
 ## Hosting Your Project on the CAS GitHub
 
