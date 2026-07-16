@@ -3,10 +3,10 @@
 The Open-Source Projects Working Group welcomes contributions from CAS
 members and the broader actuarial community.
 
-## How to host your project on the CAS GitHub
+## Joining an Existing Project on CAS GitHub
 
-- Contact the administrator of the CAS GitHub with a brief description about your project.
+- We have an active working group that works on various projects related to open source. Please  check the [About](about.md) page with more information.
 
-## Contributing to this documentation
+## Hosting Your Project on the CAS GitHub
 
-- Submit a pull request to the [project's repository](https://github.com/casact/casact.github.io)
+- Please contact the administrator of the CAS GitHub with a brief description about your project.
