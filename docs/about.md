@@ -24,10 +24,11 @@ The working group meets for one hour on a biweekly basis, currently on Fridays a
 We welcome contributors of all skill levels, including CAS members, its affiliate members, industry researchers, educators, students, and CAS candidates. You may join us by:
 
 - Responding to the CAS annual Volunteer Interest and Participation (VIP) Survey
-- Reach out to a CAS staff persons: 
+- Reach out to a CAS staff members:
   - Heather Davis <hdavis@casact.org>
   - Elizabeth Smith <esmith@casact.org>
-- Reach out to working group members:
-  - Chair Kenneth Hsu <kennethshsu@gmail.com>
-  - Vice-chair Henry Liu <henrydingliu@gmail.com> 
-  - Gene Dan <genedan@gmail.com>
+- Reach out to working group leads:
+  - Chair: Kenneth Hsu <kennethshsu@gmail.com>
+  - Vice-chair: Henry Liu <henrydingliu@gmail.com>
+  - Project maintainer: Gene Dan <genedan@gmail.com>
+  - GitHub admin: Paul Donnaly <paul.donnelly@allstate.com>
