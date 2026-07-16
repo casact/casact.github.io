@@ -1,6 +1,6 @@
 ```{raw} html
 <div class="cas-hero">
-  <h1>Advancing open source in the property &amp; casualty <span class="cas-accent">actuarial</span> profession</h1>
+  <h1>Advancing <span class="cas-accent">open source</span> in the property &amp; casualty actuarial profession</h1>
 </div>
 ```
 
