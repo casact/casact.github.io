@@ -17,7 +17,7 @@ While the [chainladder package](https://chainladder-python.readthedocs.io/) has 
 
 Many of these packages will be the first open-source libraries released in their respective practice areas, and by volunteering with the working group, you have the opportunity to make a positive impact on the actuarial profession.
 
-## How to get involved
+## Joining Us
 
 The working group meets for one hour on a biweekly basis, currently on Fridays at 11:00 AM - 12:00 PM Eastern Time. 
 
