@@ -1,4 +1,4 @@
-# Joing Us
+# Joining Us
 
 The Open-Source Projects Working Group supports the Casualty Actuarial
 Society's open-source initiatives, helping members build, maintain, and
