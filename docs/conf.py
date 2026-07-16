@@ -74,6 +74,7 @@ html_theme_options = {
     "secondary_sidebar_items": {
         "**": [],
         "projects": ["page-toc"],
+        "activities": ["page-toc"],
     },
     "footer_start": ["copyright"],
     "footer_end": [],

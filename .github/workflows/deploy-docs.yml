@@ -90,7 +90,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/index.md docs/projects.md docs/_static/images/metrics
+          git add docs/index.md docs/activities.md docs/_static/images/metrics
           if ! git diff --cached --quiet; then
             git commit -m "Update GitHub metrics"
             pushed=false

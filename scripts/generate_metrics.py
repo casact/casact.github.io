@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the "Metrics" section of docs/projects.md, plus the homepage
+"""Regenerate the Activities page (docs/activities.md), plus the homepage
 contribution heatmap, from live GitHub data.
 
 Python + matplotlib port of casact/meta's git_metrics/core_metrics.Rmd
@@ -10,7 +10,7 @@ contribution heatmap is hand-built inline SVG instead (see
 build_heatmap_svg), so its cells can carry native tooltips and respond to
 CSS :hover - both are impossible for a chart embedded via <img>, which
 sandboxes the SVG from the page entirely. The markdown between the
-``<!-- METRICS:START/END -->`` markers in docs/projects.md and the
+``<!-- METRICS:START/END -->`` markers in docs/activities.md and the
 ``<!-- HEATMAP:START/END -->`` markers in docs/index.md is replaced with
 freshly generated tables and figures. Run as part of
 .github/workflows/deploy-docs.yml (on push, daily at 06:00 UTC, and on
@@ -43,7 +43,7 @@ ACCOUNT_ESTABLISHED = date(2019, 8, 1)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 IMAGES_DIR = REPO_ROOT / "docs" / "_static" / "images" / "metrics"
-PROJECTS_MD = REPO_ROOT / "docs" / "projects.md"
+METRICS_MD = REPO_ROOT / "docs" / "activities.md"
 INDEX_MD = REPO_ROOT / "docs" / "index.md"
 FONTS_DIR = Path(__file__).resolve().parent / "fonts"
 
@@ -532,9 +532,9 @@ def main() -> None:
     ]
     generated = "\n\n".join(blocks)
 
-    replace_between_markers(PROJECTS_MD, "<!-- METRICS:START -->", "<!-- METRICS:END -->", generated)
+    replace_between_markers(METRICS_MD, "<!-- METRICS:START -->", "<!-- METRICS:END -->", generated)
     print(
-        f"Updated {PROJECTS_MD.name} and {INDEX_MD.name}: "
+        f"Updated {METRICS_MD.name} and {INDEX_MD.name}: "
         f"{total_commits} commits, {total_prs} pull requests, and "
         f"{total_closed_issues} issues closed across {repo_count} repos.",
         file=sys.stderr,

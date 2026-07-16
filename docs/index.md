@@ -132,7 +132,7 @@ Individual Claims Forecasting with Bayesian Mixture Density Networks
 
 Open-Source Projects Working Group <self>
 projects
-contributing
+activities
 resources
 about
 ```
