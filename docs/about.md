@@ -28,6 +28,6 @@ We welcome contributors of all skill levels, including CAS members, its affiliat
   - Heather Davis <hdavis@casact.org>
   - Elizabeth Smith <esmith@casact.org>
 - Reach out to working group members:
-  - Chair Kenneth Hsu <kennethshsu@gmail.com>, 
+  - Chair Kenneth Hsu <kennethshsu@gmail.com>
   - Vice-chair Henry Liu <henrydingliu@gmail.com> 
   - Gene Dan <genedan@gmail.com>
