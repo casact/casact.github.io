@@ -1,4 +1,4 @@
-# About
+# Joing Us
 
 The Open-Source Projects Working Group supports the Casualty Actuarial
 Society's open-source initiatives, helping members build, maintain, and
@@ -17,7 +17,7 @@ While the [chainladder package](https://chainladder-python.readthedocs.io/) has 
 
 Many of these packages will be the first open-source libraries released in their respective practice areas, and by volunteering with the working group, you have the opportunity to make a positive impact on the actuarial profession.
 
-## Joining Us
+## CAS Working Group
 
 The working group meets for one hour on a biweekly basis, currently on Fridays at 11:00 AM - 12:00 PM Eastern Time. 
 
@@ -32,3 +32,16 @@ We welcome contributors of all skill levels, including CAS members, its affiliat
   - Vice-chair: Henry Liu <henrydingliu@gmail.com>
   - Project maintainer: Gene Dan <genedan@gmail.com>
   - GitHub admin: Paul Donnaly <paul.donnelly@allstate.com>
+
+## Contributing
+
+The Open-Source Projects Working Group welcomes contributions from CAS
+members and the broader actuarial community.
+
+### Joining an Existing Project on CAS GitHub
+
+- We have an active working group that works on various projects related to open source. Please check the [About](about.md) page for more information.
+
+### Hosting Your Project on the CAS GitHub
+
+- Please contact the administrator of the CAS GitHub with a brief description about your project.
