@@ -388,7 +388,7 @@ Where a repo has a predominant language, GitHub identifies it. Of the repos with
 ```{rubric} Commits
 ```
 
-There have been 4,992 commits in total. The top ten repos by number of commits are:
+There have been 4,998 commits in total. The top ten repos by number of commits are:
 
 ```{raw} html
 <table class="cas-repo-table">
@@ -427,7 +427,7 @@ The ten most frequent contributors across all repos are:
 <tbody>
 <tr><td>genedan</td><td>1,734</td></tr>
 <tr><td>jbogaardt</td><td>867</td></tr>
-<tr><td>kennethshsu</td><td>646</td></tr>
+<tr><td>kennethshsu</td><td>651</td></tr>
 <tr><td>ResearchActuary</td><td>194</td></tr>
 <tr><td>henrydingliu</td><td>189</td></tr>
 <tr><td>PirateGrunt</td><td>118</td></tr>
@@ -451,11 +451,11 @@ Authors who have worked across multiple repositories:
 <tr><td>PirateGrunt</td><td>10</td></tr>
 <tr><td>genedan</td><td>6</td></tr>
 <tr><td>rajesh06</td><td>3</td></tr>
+<tr><td>kennethshsu</td><td>3</td></tr>
 <tr><td>jbogaardt</td><td>3</td></tr>
 <tr><td>cbalona</td><td>3</td></tr>
 <tr><td>kevinykuo</td><td>2</td></tr>
 <tr><td>henrydingliu</td><td>2</td></tr>
-<tr><td>kennethshsu</td><td>2</td></tr>
 <tr><td>hutch3232</td><td>2</td></tr>
 </tbody>
 </table>
