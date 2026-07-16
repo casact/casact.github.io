@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -58,8 +60,7 @@ jobs:
               git pull --rebase origin main
             done
             if [ "$pushed" != "true" ]; then
-              echo "::error::Failed to push repo listing updates after 5 attempts"
-              exit 1
+              echo "::warning::Failed to push repo listing updates after 5 attempts; continuing so the site can still build"
             fi
           fi
 
@@ -72,6 +73,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -103,8 +106,7 @@ jobs:
               git pull --rebase origin main
             done
             if [ "$pushed" != "true" ]; then
-              echo "::error::Failed to push metrics updates after 5 attempts"
-              exit 1
+              echo "::warning::Failed to push metrics updates after 5 attempts; continuing so the site can still build"
             fi
           fi
 
