@@ -106,6 +106,43 @@ def fetch_commits(repo_name: str, org: str = ORG) -> list:
     return api_get_paginated(f"https://api.github.com/repos/{org}/{repo_name}/commits")
 
 
+def fetch_first_commit_date(repo_name: str, org: str = ORG) -> date | None:
+    """Return the author date of the oldest commit on the default branch.
+
+    Commits are returned newest-first, so this fetches page 1 with
+    ``per_page=1`` to discover the last page via the Link header, then
+    fetches that single oldest commit (2 requests instead of paging the
+    whole history).
+    """
+    url = f"https://api.github.com/repos/{org}/{repo_name}/commits"
+    resp = _request_with_retries("GET", url, params={"per_page": 1})
+    if resp.status_code == 409:
+        return None
+    resp.raise_for_status()
+    commits = resp.json()
+    if not commits:
+        return None
+
+    last_page = 1
+    for part in resp.headers.get("Link", "").split(","):
+        if 'rel="last"' in part:
+            match = re.search(r"[?&]page=(\d+)", part)
+            if match:
+                last_page = int(match.group(1))
+            break
+
+    if last_page > 1:
+        resp = _request_with_retries(
+            "GET", url, params={"per_page": 1, "page": last_page}
+        )
+        resp.raise_for_status()
+        commits = resp.json()
+        if not commits:
+            return None
+
+    return parse_date(commits[0]["commit"]["author"]["date"])
+
+
 def fetch_pull_requests(repo_name: str, org: str = ORG) -> list:
     """All pull requests (open, closed, and merged) for a repo."""
     return api_get_paginated(f"https://api.github.com/repos/{org}/{repo_name}/pulls?state=all")

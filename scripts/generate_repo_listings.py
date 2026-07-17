@@ -16,12 +16,14 @@ from __future__ import annotations
 
 import html
 import sys
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from github_api import (  # noqa: E402
     DEFAULT_LANGUAGE_COLOR,
     LANGUAGE_COLORS,
+    fetch_first_commit_date,
     fetch_org_repos,
     fetch_pinned_repos,
     repo_icon,
@@ -82,9 +84,17 @@ def build_homepage_cards(repos: list[dict]) -> str:
     return '::::{grid} 1 1 3 3\n:gutter: 3\n\n' + "\n\n".join(cards) + "\n\n::::"
 
 
+def format_started(d: date | None) -> str:
+    """Format a first-commit date as ``YYYY MMM`` (e.g. ``2017 Jun``)."""
+    if d is None:
+        return ""
+    return d.strftime("%Y %b")
+
+
 def build_repo_row(r: dict) -> str:
     name = html.escape(r["name"])
     desc = html.escape(r["description"]) if r.get("description") else ""
+    started = format_started(r.get("started"))
     return (
         "<tr>\n"
         f'  <td class="cas-repo-name"><a href="{r["html_url"]}" target="_blank" '
@@ -93,6 +103,7 @@ def build_repo_row(r: dict) -> str:
         f"  <td>{lang_dot(r.get('language'))}</td>\n"
         f'  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> {r["stargazers_count"]}</span></td>\n'
         f'  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> {r["forks_count"]}</span></td>\n'
+        f"  <td>{started}</td>\n"
         "</tr>"
     )
 
@@ -113,11 +124,19 @@ def build_projects_table(repos: list[dict]) -> str:
         '<table class="cas-repo-table">\n'
         "<thead>\n<tr>\n"
         "  <th>Repository</th>\n  <th>Description</th>\n  <th>Language</th>\n"
-        "  <th>Stars</th>\n  <th>Forks</th>\n</tr>\n</thead>\n<tbody>\n"
+        "  <th>Stars</th>\n  <th>Forks</th>\n  <th>Project Launched</th>\n"
+        "</tr>\n</thead>\n<tbody>\n"
         + rows
         + "\n</tbody>\n</table>\n</div>\n```"
     )
     return intro + "\n\n" + table
+
+
+def attach_started_dates(repos: list[dict]) -> None:
+    """Set each repo's ``started`` field from its oldest commit date."""
+    for i, r in enumerate(repos, start=1):
+        name = r["name"]
+        r["started"] = fetch_first_commit_date(name)
 
 
 def main() -> None:
@@ -129,6 +148,8 @@ def main() -> None:
     print("Fetching all org repos for the Projects page...", file=sys.stderr)
     all_repos = fetch_org_repos()
     print(f"  {len(all_repos)} repos", file=sys.stderr)
+    print("Fetching first-commit dates...", file=sys.stderr)
+    attach_started_dates(all_repos)
     replace_between_markers(PROJECTS_MD, build_projects_table(all_repos))
 
     print(
