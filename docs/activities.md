@@ -13,7 +13,7 @@ A repository - typically called a "repo" for short - is the unit of measure for 
 ```{rubric} By date
 ```
 
-As of 2026-07-17, there are 45 repositories in the organization. The count begins at ten repos as of the account's creation in August 2019, since several pre-existing repos were transferred in from other owners at that time.
+As of 2026-07-17, there are 46 repositories in the organization. The count begins at ten repos as of the account's creation in August 2019, since several pre-existing repos were transferred in from other owners at that time.
 
 ![Cumulative repository count over time](/_static/images/metrics/repo_growth.svg)
 
@@ -40,7 +40,7 @@ Where a repo has a predominant language, GitHub identifies it. Of the repos with
 ```{rubric} Commits
 ```
 
-There have been 5,009 commits in total. The top ten repos by number of commits are:
+There have been 5,015 commits in total. The top ten repos by number of commits are:
 
 ```{raw} html
 <table class="cas-repo-table">
@@ -56,7 +56,7 @@ There have been 5,009 commits in total. The top ten repos by number of commits a
 <tr><td>shiny_big_long</td><td>97</td></tr>
 <tr><td>raw_package</td><td>83</td></tr>
 <tr><td>PCDM</td><td>77</td></tr>
-<tr><td>casact.github.io</td><td>61</td></tr>
+<tr><td>casact.github.io</td><td>64</td></tr>
 <tr><td>reinspy</td><td>53</td></tr>
 </tbody>
 </table>
@@ -77,9 +77,9 @@ The ten most frequent contributors across all repos are:
 <tr><th>Author</th><th>Commits</th></tr>
 </thead>
 <tbody>
-<tr><td>genedan</td><td>1,734</td></tr>
+<tr><td>genedan</td><td>1,737</td></tr>
 <tr><td>jbogaardt</td><td>867</td></tr>
-<tr><td>kennethshsu</td><td>658</td></tr>
+<tr><td>kennethshsu</td><td>659</td></tr>
 <tr><td>ResearchActuary</td><td>194</td></tr>
 <tr><td>henrydingliu</td><td>189</td></tr>
 <tr><td>PirateGrunt</td><td>118</td></tr>
@@ -101,7 +101,7 @@ Authors who have worked across multiple repositories:
 <tbody>
 <tr><td>ResearchActuary</td><td>14</td></tr>
 <tr><td>PirateGrunt</td><td>10</td></tr>
-<tr><td>genedan</td><td>6</td></tr>
+<tr><td>genedan</td><td>7</td></tr>
 <tr><td>rajesh06</td><td>3</td></tr>
 <tr><td>kennethshsu</td><td>3</td></tr>
 <tr><td>jbogaardt</td><td>3</td></tr>
