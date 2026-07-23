@@ -19,7 +19,7 @@ Actuarial reserving in Python
 ```{raw} html
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 264</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 265</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 106</span>
 </div>
 ```
@@ -65,7 +65,7 @@ Tryangle is an automatic chainladder reserving framework. It provides scoring an
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 28</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 12</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 13</span>
 </div>
 ```
 :::

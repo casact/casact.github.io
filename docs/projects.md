@@ -26,7 +26,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td class="cas-repo-name"><a href="https://github.com/casact/chainladder-python" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>chainladder-python</a></td>
   <td>Actuarial reserving in Python</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 264</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 265</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 106</span></td>
   <td>2017 Jun</td>
 </tr>
@@ -51,7 +51,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td>Tryangle is an automatic chainladder reserving framework. It provides scoring and optimisation methods based on machine learning techniques to automatically select optimal parameters to minimise reserve prediction error. </td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 28</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 12</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 13</span></td>
   <td>2021 May</td>
 </tr>
 <tr>
