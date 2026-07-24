@@ -79,7 +79,7 @@ Property Casualty Data Model Specification
 ```{raw} html
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 36</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 37</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 10</span>
 </div>
 ```
