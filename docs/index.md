@@ -20,7 +20,7 @@ Actuarial reserving in Python
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 265</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 106</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 107</span>
 </div>
 ```
 :::
