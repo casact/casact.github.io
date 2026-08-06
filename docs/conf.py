@@ -1,9 +1,9 @@
 # Configuration file for the Sphinx documentation builder.
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-project = "Casualty Actuarial Society"
-copyright = "2026, Casualty Actuarial Society"
-author = "Casualty Actuarial Society"
+project = "CAS Open-Source Projects Working Group"
+copyright = "2026, Casualty Actuarial Society's Open-Source Projects Working Group"
+author = "CAS Open-Source Projects Working Group"
 
 extensions = [
     "myst_parser",
