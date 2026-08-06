@@ -117,19 +117,11 @@ a:hover {
   font-weight: 600;
 }
 
-/* The "self" toctree entry (always first) is used only to label the site
-   section - it isn't meant to be a clickable link, so present it as plain
-   descriptive text. The section pages that follow stay normal links. */
+
 .bd-header .navbar-header-items__center .nav-item:first-child .nav-link {
-  pointer-events: none;
-  cursor: default;
   font-size: 1.15rem;
   font-weight: 600;
   margin-right: 2rem;
-}
-
-.bd-header .navbar-header-items__center .nav-item:first-child .nav-link:hover {
-  color: #ffffff !important;
 }
 
 .bd-header .navbar-icon-links a svg,
