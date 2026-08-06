@@ -116,16 +116,6 @@ Webpage for the casact GitHub
 
 <!-- HEATMAP:END -->
 
-```{raw} html
-<div class="cas-band">
-  <h2>Disclaimer</h2>
-  <p>
-    This website is experimental, not official, and is still being drafted and reviewed. For official CAS homepage, please visit:
-    <a href="https://www.casact.org">casact.org</a>.
-  </p>
-</div>
-```
-
 ```{toctree}
 :maxdepth: 1
 :hidden:
