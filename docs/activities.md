@@ -40,7 +40,7 @@ Where a repo has a predominant language, GitHub identifies it. Of the repos with
 ```{rubric} Commits
 ```
 
-There have been 5,123 commits in total. The top ten repos by number of commits are:
+There have been 5,125 commits in total. The top ten repos by number of commits are:
 
 ```{raw} html
 <table class="cas-repo-table">
@@ -54,7 +54,7 @@ There have been 5,123 commits in total. The top ten repos by number of commits a
 <tr><td>imaginator</td><td>116</td></tr>
 <tr><td>rp-bnn-claims</td><td>104</td></tr>
 <tr><td>shiny_big_long</td><td>97</td></tr>
-<tr><td>casact.github.io</td><td>95</td></tr>
+<tr><td>casact.github.io</td><td>97</td></tr>
 <tr><td>raw_package</td><td>83</td></tr>
 <tr><td>PCDM</td><td>77</td></tr>
 <tr><td>reinspy</td><td>53</td></tr>
@@ -79,13 +79,13 @@ The ten most frequent contributors across all repos are:
 <tbody>
 <tr><td>genedan</td><td>1,763</td></tr>
 <tr><td>jbogaardt</td><td>867</td></tr>
-<tr><td>kennethshsu</td><td>685</td></tr>
+<tr><td>kennethshsu</td><td>686</td></tr>
 <tr><td>ResearchActuary</td><td>194</td></tr>
 <tr><td>henrydingliu</td><td>194</td></tr>
 <tr><td>PirateGrunt</td><td>118</td></tr>
 <tr><td>kevinykuo</td><td>110</td></tr>
 <tr><td>jbogaardt-wcf</td><td>96</td></tr>
-<tr><td>github-actions[bot]</td><td>52</td></tr>
+<tr><td>github-actions[bot]</td><td>53</td></tr>
 <tr><td>priyam0k</td><td>37</td></tr>
 </tbody>
 </table>
