@@ -27,7 +27,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td>Actuarial reserving in Python, triangle data manipulation, link ratios calculation, and IBNR models.</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 270</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 111</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 112</span></td>
   <td>2017 Jun</td>
 </tr>
 <tr>
