@@ -40,7 +40,7 @@ Where a repo has a predominant language, GitHub identifies it. Of the repos with
 ```{rubric} Commits
 ```
 
-There have been 5,621 commits in total. The top ten repos by number of commits are:
+There have been 5,624 commits in total. The top ten repos by number of commits are:
 
 ```{raw} html
 <table class="cas-repo-table">
@@ -51,7 +51,7 @@ There have been 5,621 commits in total. The top ten repos by number of commits a
 <tr><td>chainladder-python</td><td>2,983</td></tr>
 <tr><td>FASLR</td><td>1,235</td></tr>
 <tr><td>meta</td><td>172</td></tr>
-<tr><td>casact.github.io</td><td>132</td></tr>
+<tr><td>casact.github.io</td><td>135</td></tr>
 <tr><td>imaginator</td><td>116</td></tr>
 <tr><td>rp-bnn-claims</td><td>104</td></tr>
 <tr><td>shiny_big_long</td><td>97</td></tr>
@@ -79,14 +79,14 @@ The ten most frequent contributors across all repos are:
 <tbody>
 <tr><td>genedan</td><td>1,812</td></tr>
 <tr><td>jbogaardt</td><td>867</td></tr>
-<tr><td>kennethshsu</td><td>818</td></tr>
+<tr><td>kennethshsu</td><td>819</td></tr>
 <tr><td>henrydingliu</td><td>364</td></tr>
 <tr><td>ResearchActuary</td><td>194</td></tr>
 <tr><td>PirateGrunt</td><td>118</td></tr>
 <tr><td>kevinykuo</td><td>110</td></tr>
 <tr><td>priyam0k</td><td>106</td></tr>
 <tr><td>jbogaardt-wcf</td><td>96</td></tr>
-<tr><td>github-actions[bot]</td><td>87</td></tr>
+<tr><td>github-actions[bot]</td><td>89</td></tr>
 </tbody>
 </table>
 ```
@@ -116,7 +116,7 @@ Authors who have worked across multiple repositories:
 ```{rubric} Pull requests
 ```
 
-Pull requests take place when a GitHub user submits an improvement or correction to be considered by the maintainer of a repo. There have been 672 pull requests in total. The top ten repos by number of pull requests are:
+Pull requests take place when a GitHub user submits an improvement or correction to be considered by the maintainer of a repo. There have been 671 pull requests in total. The top ten repos by number of pull requests are:
 
 ```{raw} html
 <table class="cas-repo-table">
@@ -124,7 +124,7 @@ Pull requests take place when a GitHub user submits an improvement or correction
 <tr><th>Repo</th><th>Total pull requests</th></tr>
 </thead>
 <tbody>
-<tr><td>chainladder-python</td><td>580</td></tr>
+<tr><td>chainladder-python</td><td>579</td></tr>
 <tr><td>FASLR</td><td>19</td></tr>
 <tr><td>rp-bnn-claims</td><td>17</td></tr>
 <tr><td>pull_request_tutorial</td><td>12</td></tr>
