@@ -49,8 +49,8 @@ The Unofficial CAS Githering Place
 ```{raw} html
 <div class="cas-repo-meta">
   
-  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 5</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 8</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 6</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 11</span>
 </div>
 ```
 :::
