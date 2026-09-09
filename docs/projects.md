@@ -26,7 +26,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td class="cas-repo-name"><a href="https://github.com/casact/chainladder-python" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>chainladder-python</a></td>
   <td>Actuarial reserving in Python, triangle data manipulation, link ratios calculation, and IBNR models.</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 278</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 279</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 115</span></td>
   <td>2017 Jun</td>
 </tr>
@@ -87,20 +87,20 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td>2016 Jul</td>
 </tr>
 <tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/actsim" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>actsim</a></td>
+  <td></td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 10</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
+  <td>2025 Jul</td>
+</tr>
+<tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/risky-router" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>risky-router</a></td>
   <td>This repository holds the code behind riskyrouter.com which was the joint winner of the inaugural CAS Hacktuary Challenge in 2022.</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 10</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
   <td>2022 Sep</td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/actsim" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>actsim</a></td>
-  <td></td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 9</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
-  <td>2025 Jul</td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/double_lift" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>double_lift</a></td>
@@ -138,7 +138,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td class="cas-repo-name"><a href="https://github.com/casact/capital-modeling" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>capital-modeling</a></td>
   <td>CAS Monograph 15 - Introduction to Capital Modeling and Portfolio Management</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3D6117"></span>TeX</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 6</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 7</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
   <td>2025 Nov</td>
 </tr>
