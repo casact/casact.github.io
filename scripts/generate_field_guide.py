@@ -133,8 +133,8 @@ def build_page_body(rows: list[dict]) -> str:
         f"{cas_count} of the listings in the [casact GitHub "
         "organization](https://github.com/casact) and the rest third-party "
         "packages the working group finds useful, listed for convenience and "
-        "not endorsed by the CAS. Several tools appear under more than one "
-        "area, because several tools do more than one thing."
+        "not endorsed by the CAS. Tools that cover more than one area are "
+        "listed under each."
     )
     sections = "\n\n".join(
         build_area_section(area, [r for r in rows if r["area"] == area])
