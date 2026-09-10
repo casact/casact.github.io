@@ -414,26 +414,36 @@ a:hover {
   color: var(--pst-color-text-muted);
 }
 
-/* The badge marks a tool as living in the casact org, so it needs to read as
-   a label rather than a link even though it sits inside the name cell. */
-.cas-fg-badge {
-  display: inline-block;
-  margin-left: 0.4rem;
-  padding: 0.05rem 0.35rem;
-  font-family: var(--pst-font-family-heading);
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: var(--cas-navy);
-  border-radius: 0.2rem;
-  vertical-align: 0.1em;
+/* Docutils gives markdown tables its own classes; the script adds
+   .cas-repo-table so the Field Guide inherits the repo tables' styling, and
+   these rules cover what markdown tables need on top of that. */
+.cas-fg-table {
+  margin: 0;
 }
 
-.cas-fg-repo-link {
-  margin-left: 0.4rem;
-  font-size: 0.75rem;
-  font-weight: 400;
+/* Markdown tables come with the theme's column rules; the repo tables have
+   none, so blank out the variable those rules read rather than fight them
+   selector for selector. */
+.cas-fg-table {
+  --pst-color-table-inner-border: transparent;
+  --pst-color-table-outer-border: transparent;
+}
+
+.cas-fg-table tbody tr:hover td {
+  background-color: var(--cas-blue-pale);
+}
+
+.cas-fg-home {
+  white-space: nowrap;
+  font-size: 0.85rem;
+}
+
+.cas-fg-home--cas {
+  font-weight: 600;
+  color: var(--cas-navy);
+}
+
+.cas-fg-home--community {
   color: var(--pst-color-text-muted);
 }
 
