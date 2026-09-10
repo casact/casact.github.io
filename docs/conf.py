@@ -26,6 +26,7 @@ suppress_warnings = ["myst.header"]
 html_theme = "pydata_sphinx_theme"
 html_static_path = ["_static"]
 html_css_files = ["css/custom.css"]
+html_js_files = ["js/field-guide.js"]
 html_title = "Casualty Actuarial Society"
 html_favicon = "_static/images/favicon.png"
 html_logo = "_static/images/cas-logo-horiz-reverse.png"
@@ -73,6 +74,7 @@ html_theme_options = {
     ],
     "secondary_sidebar_items": {
         "**": [],
+        "field-guide": ["page-toc"],
         "projects": ["page-toc"],
         "activities": ["page-toc"],
     },

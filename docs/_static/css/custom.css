@@ -355,3 +355,108 @@ a:hover {
 .bd-footer a:hover {
   color: var(--cas-gold);
 }
+
+/* -- Field Guide: filter chips, CAS badge, per-area tables -- */
+.cas-fg-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--cas-blue-pale);
+  border-left: 3px solid var(--cas-navy);
+  border-radius: 0.25rem;
+}
+
+.cas-fg-chiprow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.cas-fg-chiplabel {
+  min-width: 5.25rem;
+  font-family: var(--pst-font-family-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cas-navy);
+}
+
+.cas-fg-chip {
+  padding: 0.2rem 0.7rem;
+  font-family: var(--pst-font-family-base);
+  font-size: 0.85rem;
+  color: var(--cas-navy);
+  background-color: #ffffff;
+  border: 1px solid var(--cas-navy);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.cas-fg-chip:hover {
+  border-color: var(--cas-gold);
+  color: var(--cas-navy-dark);
+}
+
+.cas-fg-chip.is-active {
+  color: var(--cas-navy-dark);
+  background-color: var(--cas-gold);
+  border-color: var(--cas-gold);
+  font-weight: 600;
+}
+
+.cas-fg-count {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: var(--pst-color-text-muted);
+}
+
+/* The badge marks a tool as living in the casact org, so it needs to read as
+   a label rather than a link even though it sits inside the name cell. */
+.cas-fg-badge {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.35rem;
+  font-family: var(--pst-font-family-heading);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: var(--cas-navy);
+  border-radius: 0.2rem;
+  vertical-align: 0.1em;
+}
+
+.cas-fg-repo-link {
+  margin-left: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--pst-color-text-muted);
+}
+
+/* Tool names wrap on narrow screens; the org tables can keep their nowrap
+   because they carry short repo names only. */
+.cas-fg-tool a {
+  white-space: normal;
+}
+
+.cas-fg-table td {
+  vertical-align: top;
+}
+
+.cas-fg-lang {
+  white-space: nowrap;
+}
+
+.cas-fg-lang-none {
+  color: var(--pst-color-text-muted);
+}
+
+.cas-fg-empty {
+  margin: 0.25rem 0 0;
+  font-size: 0.85rem;
+  color: var(--pst-color-text-base);
+}
