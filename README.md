@@ -2,31 +2,34 @@
 
 This repository governs the development of the [CAS GitHub homepage](https://casact.github.io).
 
-## Adding a tool to the Field Guide
+## Setting a project's area of practice
 
-The [Field Guide](https://casact.github.io/field-guide.html) is the one page on
-this site that is curated by hand rather than pulled from the GitHub API. Its
-source of truth is [`docs/_data/field_guide.csv`](docs/_data/field_guide.csv),
-one row per listing:
+The [Projects](https://casact.github.io/projects.html) table is generated from
+the GitHub API, but which area of actuarial work a project belongs to is a
+judgement rather than a fact the API knows. Those live in
+[`docs/_data/repo_areas.csv`](docs/_data/repo_areas.csv), one line per
+repository:
 
-| column | what goes in it |
-| --- | --- |
-| `area` | Functional area to list the tool under. Areas appear in the order they first appear in the file. |
-| `tool` | Display name. |
-| `url` | Where a reader should go first: CRAN, PyPI, the project site, or the repo. |
-| `repo_url` | Optional source repository, when `url` points somewhere else. |
-| `language` | Predominant language, spelled the way GitHub spells it. |
-| `cas_hosted` | `yes` for repositories in the casact organization, `no` otherwise. |
-| `description` | One sentence on what the tool does. |
-
-Add your row, then regenerate the page so the diff shows what readers will see:
-
-```bash
-python scripts/generate_field_guide.py
+```csv
+repo,area
+chainladder-python,Reserving
+mg-credibility,Credibility and experience rating
+claim_sim,
 ```
 
-That script needs nothing but the standard library, and the deploy workflow runs
-it again before building, so the published page cannot drift from the CSV.
+Leave the area empty for a project nobody has classified yet; it still appears
+in the table, just without an area. The generator warns about repositories with
+no entry and about entries naming a repository that is no longer in the
+organization, but it never fails the build over either, so a rename upstream
+cannot take the site down.
+
+The column is picked up on the next deploy. To see it locally, run the listing
+generator (needs a `GITHUB_TOKEN` for the API):
+
+```bash
+pip install ".[repos]"
+GITHUB_TOKEN=... python scripts/generate_repo_listings.py
+```
 
 ## Building the site locally
 

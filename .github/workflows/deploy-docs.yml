@@ -128,12 +128,6 @@ jobs:
       - name: Install dependencies
         run: pip install .
 
-      # Deterministic, no API calls: keeps the published Field Guide in step
-      # with docs/_data/field_guide.csv even if a contributor edits the CSV
-      # without running the generator locally.
-      - name: Render the Field Guide
-        run: python scripts/generate_field_guide.py
-
       - name: Build Sphinx site
         run: sphinx-build -b html docs _build/html
 

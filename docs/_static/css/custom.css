@@ -356,117 +356,37 @@ a:hover {
   color: var(--cas-gold);
 }
 
-/* -- Field Guide: filter chips, CAS badge, per-area tables -- */
-.cas-fg-filters {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin: 1.5rem 0 2rem;
-  padding: 1rem 1.25rem;
-  background-color: var(--cas-blue-pale);
-  border-left: 3px solid var(--cas-navy);
-  border-radius: 0.25rem;
-}
 
-.cas-fg-chiprow {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-
-.cas-fg-chiplabel {
-  min-width: 5.25rem;
-  font-family: var(--pst-font-family-heading);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--cas-navy);
-}
-
-.cas-fg-chip {
-  padding: 0.2rem 0.7rem;
-  font-family: var(--pst-font-family-base);
+/* -- Area of practice column on the Projects table -- */
+.cas-repo-area {
   font-size: 0.85rem;
-  color: var(--cas-navy);
-  background-color: #ffffff;
-  border: 1px solid var(--cas-navy);
-  border-radius: 1rem;
-  cursor: pointer;
-}
-
-.cas-fg-chip:hover {
-  border-color: var(--cas-gold);
-  color: var(--cas-navy-dark);
-}
-
-.cas-fg-chip.is-active {
-  color: var(--cas-navy-dark);
-  background-color: var(--cas-gold);
-  border-color: var(--cas-gold);
-  font-weight: 600;
-}
-
-.cas-fg-count {
-  margin: 0.25rem 0 0;
-  font-size: 0.8rem;
   color: var(--pst-color-text-muted);
 }
 
-/* Docutils gives markdown tables its own classes; the script adds
-   .cas-repo-table so the Field Guide inherits the repo tables' styling, and
-   these rules cover what markdown tables need on top of that. */
-.cas-fg-table {
-  margin: 0;
-}
-
-/* Markdown tables come with the theme's column rules; the repo tables have
-   none, so blank out the variable those rules read rather than fight them
-   selector for selector. */
-.cas-fg-table {
-  --pst-color-table-inner-border: transparent;
-  --pst-color-table-outer-border: transparent;
-}
-
-.cas-fg-table tbody tr:hover td {
-  background-color: var(--cas-blue-pale);
-}
-
-.cas-fg-home {
-  white-space: nowrap;
-  font-size: 0.85rem;
-}
-
-.cas-fg-home--cas {
-  font-weight: 600;
-  color: var(--cas-navy);
-}
-
-.cas-fg-home--community {
-  color: var(--pst-color-text-muted);
-}
-
-/* Tool names wrap on narrow screens; the org tables can keep their nowrap
-   because they carry short repo names only. */
-.cas-fg-tool a {
+/* Seven columns is more than the content area holds comfortably. Let the repo
+   name wrap and cap how much width it can claim, so the description keeps the
+   slack; it is the column people actually read. */
+.cas-repo-table .cas-repo-name a {
   white-space: normal;
 }
 
-.cas-fg-table td {
-  vertical-align: top;
+.cas-repo-table td:first-child {
+  max-width: 12rem;
 }
 
-.cas-fg-lang {
+.cas-repo-table td:nth-child(3) {
+  min-width: 14rem;
+}
+
+/* The two stat columns never need more than their content. */
+.cas-repo-table td:nth-child(5),
+.cas-repo-table td:nth-child(6) {
+  width: 1%;
   white-space: nowrap;
 }
 
-.cas-fg-lang-none {
-  color: var(--pst-color-text-muted);
-}
-
-.cas-fg-empty {
-  margin: 0.25rem 0 0;
-  font-size: 0.85rem;
-  color: var(--pst-color-text-base);
+/* Let the longer headings wrap rather than hold a column open on their own. */
+.cas-repo-table th:nth-child(4),
+.cas-repo-table th:nth-child(7) {
+  white-space: normal;
 }
