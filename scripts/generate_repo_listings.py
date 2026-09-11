@@ -14,6 +14,7 @@ at 05:00 UTC, and on manual dispatch).
 
 from __future__ import annotations
 
+import csv
 import html
 import sys
 from datetime import date
@@ -32,6 +33,7 @@ from github_api import (  # noqa: E402
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_MD = REPO_ROOT / "docs" / "index.md"
 PROJECTS_MD = REPO_ROOT / "docs" / "projects.md"
+AREAS_CSV = REPO_ROOT / "docs" / "_data" / "repo_areas.csv"
 
 START_MARKER = "<!-- REPOS:START -->"
 END_MARKER = "<!-- REPOS:END -->"
@@ -49,6 +51,47 @@ def replace_between_markers(path: Path, generated: str) -> None:
         + text[end:]
     )
     path.write_text(new_text)
+
+
+def read_areas() -> dict[str, str]:
+    """Map repo name to area of practice, from the working group's own file.
+
+    Nothing here comes from the GitHub API: which area a repo belongs to is a
+    judgement about actuarial work, so it lives in a file people edit and
+    review rather than in this script. A repo with no entry, or an empty one,
+    simply shows no area until somebody who knows the project fills it in.
+    """
+    if not AREAS_CSV.exists():
+        print(f"  {AREAS_CSV.name} not found; leaving the area column empty", file=sys.stderr)
+        return {}
+    with AREAS_CSV.open(newline="", encoding="utf-8") as fh:
+        return {
+            (row.get("repo") or "").strip(): (row.get("area") or "").strip()
+            for row in csv.DictReader(fh)
+        }
+
+
+def report_area_gaps(repos: list[dict], areas: dict[str, str]) -> None:
+    """Say what the mapping and the organization disagree about.
+
+    A warning rather than an error: a repo renamed or added upstream must not
+    be able to break the daily deploy, and an unclassified repo still belongs
+    in the table.
+    """
+    names = {r["name"] for r in repos}
+    unclassified = sorted(n for n in names if not areas.get(n))
+    unknown = sorted(set(areas) - names)
+    if unclassified:
+        print(
+            f"  {len(unclassified)} repo(s) with no area: {', '.join(unclassified)}",
+            file=sys.stderr,
+        )
+    if unknown:
+        print(
+            f"  {AREAS_CSV.name} names {len(unknown)} repo(s) not in the org "
+            f"(renamed or removed?): {', '.join(unknown)}",
+            file=sys.stderr,
+        )
 
 
 def lang_dot(language: str | None) -> str:
@@ -94,11 +137,13 @@ def format_started(d: date | None) -> str:
 def build_repo_row(r: dict) -> str:
     name = html.escape(r["name"])
     desc = html.escape(r["description"]) if r.get("description") else ""
+    area = html.escape(r.get("area") or "")
     started = format_started(r.get("started"))
     return (
         "<tr>\n"
         f'  <td class="cas-repo-name"><a href="{r["html_url"]}" target="_blank" '
         f'rel="noopener">{repo_icon(14)}{name}</a></td>\n'
+        f'  <td class="cas-repo-area">{area}</td>\n'
         f"  <td>{desc}</td>\n"
         f"  <td>{lang_dot(r.get('language'))}</td>\n"
         f'  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> {r["stargazers_count"]}</span></td>\n'
@@ -116,14 +161,17 @@ def build_projects_table(repos: list[dict]) -> str:
     intro = (
         f"All {len(repos)} public repositories in the "
         "[casact GitHub organization](https://github.com/casact), fetched "
-        "directly from the GitHub API."
+        "directly from the GitHub API, except the areas of practice, which "
+        "come from [a data file the working group maintains by "
+        "hand](https://github.com/casact/casact.github.io/blob/main/docs/_data/repo_areas.csv)."
     )
     table = (
         '```{raw} html\n'
         '<div class="cas-repo-table-wrap">\n'
         '<table class="cas-repo-table">\n'
         "<thead>\n<tr>\n"
-        "  <th>Repository</th>\n  <th>Description</th>\n  <th>Language</th>\n"
+        "  <th>Repository</th>\n  <th>Area</th>\n  <th>Description</th>\n"
+        "  <th>Language</th>\n"
         "  <th>Stars</th>\n  <th>Forks</th>\n  <th>Project Launched</th>\n"
         "</tr>\n</thead>\n<tbody>\n"
         + rows
@@ -148,6 +196,10 @@ def main() -> None:
     print("Fetching all org repos for the Projects page...", file=sys.stderr)
     all_repos = fetch_org_repos()
     print(f"  {len(all_repos)} repos", file=sys.stderr)
+    areas = read_areas()
+    report_area_gaps(all_repos, areas)
+    for r in all_repos:
+        r["area"] = areas.get(r["name"], "")
     print("Fetching first-commit dates...", file=sys.stderr)
     attach_started_dates(all_repos)
     replace_between_markers(PROJECTS_MD, build_projects_table(all_repos))

@@ -355,3 +355,38 @@ a:hover {
 .bd-footer a:hover {
   color: var(--cas-gold);
 }
+
+
+/* -- Area of practice column on the Projects table -- */
+.cas-repo-area {
+  font-size: 0.85rem;
+  color: var(--pst-color-text-muted);
+}
+
+/* Seven columns is more than the content area holds comfortably. Let the repo
+   name wrap and cap how much width it can claim, so the description keeps the
+   slack; it is the column people actually read. */
+.cas-repo-table .cas-repo-name a {
+  white-space: normal;
+}
+
+.cas-repo-table td:first-child {
+  max-width: 12rem;
+}
+
+.cas-repo-table td:nth-child(3) {
+  min-width: 14rem;
+}
+
+/* The two stat columns never need more than their content. */
+.cas-repo-table td:nth-child(5),
+.cas-repo-table td:nth-child(6) {
+  width: 1%;
+  white-space: nowrap;
+}
+
+/* Let the longer headings wrap rather than hold a column open on their own. */
+.cas-repo-table th:nth-child(4),
+.cas-repo-table th:nth-child(7) {
+  white-space: normal;
+}

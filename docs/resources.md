@@ -22,6 +22,15 @@ production-ready software.
 - [Read the Docs](https://docs.readthedocs.io/) - free hosting for project documentation
 - [roxygen2](https://roxygen2.r-lib.org/) - in-source documentation for R packages
 
+## Beyond the CAS organization
+
+Open-source actuarial work happens outside this organization too. These are the
+indexes to start from rather than a list we maintain:
+
+- [CRAN Task View: Actuarial Science](https://cran.r-project.org/view=ActuarialScience) - the curated index of R packages for actuarial work
+- [JuliaActuary](https://juliaactuary.org/) - the Julia actuarial packages and their documentation
+- [Loss Data Analytics](https://openacttexts.github.io/) - a free text on severity, aggregate losses, and credibility, with worked R code
+
 ## Software engineering practices
 
 - [Semantic Versioning](https://semver.org/) - a standard convention for versioning released software
