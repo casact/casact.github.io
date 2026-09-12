@@ -91,7 +91,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td></td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 10</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 3</span></td>
   <td>2025 Jul</td>
 </tr>
 <tr>
