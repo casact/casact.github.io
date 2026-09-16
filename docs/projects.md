@@ -371,7 +371,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td>A document that will be used to collaborate on learning collaborative editing using repositories</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3D6117"></span>TeX</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
   <td>2013 Dec</td>
 </tr>
 <tr>
