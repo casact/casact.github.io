@@ -26,15 +26,15 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td class="cas-repo-name"><a href="https://github.com/casact/chainladder-python" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>chainladder-python</a></td>
   <td>Actuarial reserving in Python, triangle data manipulation, link ratios calculation, and IBNR models.</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 278</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 114</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 279</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 115</span></td>
   <td>2017 Jun</td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/FASLR" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>FASLR</a></td>
   <td>Free Actuarial System for Loss Reserving</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 57</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 58</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 19</span></td>
   <td>2021 Jun</td>
 </tr>
@@ -42,7 +42,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td class="cas-repo-name"><a href="https://github.com/casact/PCDM" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>PCDM</a></td>
   <td>Property Casualty Data Model Specification</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 38</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 39</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 11</span></td>
   <td>2020 Jun</td>
 </tr>
@@ -50,7 +50,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td class="cas-repo-name"><a href="https://github.com/casact/tryangle" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>tryangle</a></td>
   <td>Tryangle is an automatic chainladder reserving framework. It provides scoring and optimisation methods based on machine learning techniques to automatically select optimal parameters to minimise reserve prediction error. </td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 27</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 28</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 13</span></td>
   <td>2021 May</td>
 </tr>
@@ -151,6 +151,14 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td>2024 Mar</td>
 </tr>
 <tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/research-papers" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>research-papers</a></td>
+  <td>This will house subprojects associated with research papers sponsored by the CAS</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 6</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
+  <td>2019 Nov</td>
+</tr>
+<tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/cascsim" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>cascsim</a></td>
   <td></td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
@@ -159,20 +167,20 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td>2019 Feb</td>
 </tr>
 <tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/research-papers" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>research-papers</a></td>
-  <td>This will house subprojects associated with research papers sponsored by the CAS</td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 5</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
-  <td>2019 Nov</td>
-</tr>
-<tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/painless_glms" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>painless_glms</a></td>
   <td>Code examples from CLRS 2024</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 4</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 5</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
   <td>2024 Sep</td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/GAM_Examples" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>GAM_Examples</a></td>
+  <td>Example Code for Generalized Additive Models</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 4</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+  <td>2021 Nov</td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/claim_sim" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>claim_sim</a></td>
@@ -189,14 +197,6 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 2</span></td>
   <td>2019 Oct</td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/GAM_Examples" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>GAM_Examples</a></td>
-  <td>Example Code for Generalized Additive Models</td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 3</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-  <td>2021 Nov</td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/stan_stans" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>stan_stans</a></td>
