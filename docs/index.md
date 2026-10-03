@@ -34,7 +34,7 @@ Free Actuarial System for Loss Reserving
 ```{raw} html
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 58</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 59</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 19</span>
 </div>
 ```
@@ -64,7 +64,7 @@ Tryangle is an automatic chainladder reserving framework. It provides scoring an
 ```{raw} html
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 28</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 29</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 13</span>
 </div>
 ```
@@ -79,7 +79,7 @@ Property Casualty Data Model Specification
 ```{raw} html
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 39</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 40</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 11</span>
 </div>
 ```
