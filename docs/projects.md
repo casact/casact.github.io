@@ -42,7 +42,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td class="cas-repo-name"><a href="https://github.com/casact/PCDM" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>PCDM</a></td>
   <td>Property Casualty Data Model Specification</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 39</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 40</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 11</span></td>
   <td>2020 Jun</td>
 </tr>
@@ -82,7 +82,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td class="cas-repo-name"><a href="https://github.com/casact/raw_package" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>raw_package</a></td>
   <td>Data package for R actuarial workshops</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#198CE7"></span>R</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 12</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 13</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 3</span></td>
   <td>2016 Jul</td>
 </tr>
@@ -90,7 +90,7 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td class="cas-repo-name"><a href="https://github.com/casact/actsim" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>actsim</a></td>
   <td></td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 10</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 11</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 3</span></td>
   <td>2025 Jul</td>
 </tr>
@@ -263,6 +263,14 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td>2020 May</td>
 </tr>
 <tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/calendar-heatmap" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>calendar-heatmap</a></td>
+  <td>GitHub-style calendar heatmap rendered in matplotlib</td>
+  <td></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+  <td>2026 Jul</td>
+</tr>
+<tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/CAS-Project-Health-Insurance-Fraud-Detection" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>CAS-Project-Health-Insurance-Fraud-Detection</a></td>
   <td>Integrating Machine Learning Models with Business Rule Triggers to Boost Performance in Health Insurance Fraud Detection: A Case Study</td>
   <td></td>
@@ -277,6 +285,14 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
   <td>2022 Sep</td>
+</tr>
+<tr>
+  <td class="cas-repo-name"><a href="https://github.com/casact/hardhat" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>hardhat</a></td>
+  <td>Workers&#x27; compensation, retrospective and experience rating</td>
+  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
+  <td>2026 Jul</td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/pres_higher_learning" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>pres_higher_learning</a></td>
@@ -301,14 +317,6 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
   <td>2019 Apr</td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/calendar-heatmap" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>calendar-heatmap</a></td>
-  <td>GitHub-style calendar heatmap rendered in matplotlib</td>
-  <td></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-  <td>2026 Jul</td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/casact.github.io" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>casact.github.io</a></td>
@@ -341,14 +349,6 @@ All 46 public repositories in the [casact GitHub organization](https://github.co
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span></td>
   <td>2016 May</td>
-</tr>
-<tr>
-  <td class="cas-repo-name"><a href="https://github.com/casact/hardhat" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>hardhat</a></td>
-  <td>Workers&#x27; compensation, retrospective and experience rating</td>
-  <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 0</span></td>
-  <td>2026 Jul</td>
 </tr>
 <tr>
   <td class="cas-repo-name"><a href="https://github.com/casact/intro_to_text_mining" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" class="cas-repo-icon"><path fill="currentColor" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>intro_to_text_mining</a></td>
