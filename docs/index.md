@@ -19,8 +19,8 @@ Actuarial reserving in Python, triangle data manipulation, link ratios calculati
 ```{raw} html
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 288</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 124</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 289</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 125</span>
 </div>
 ```
 :::
@@ -34,8 +34,8 @@ Free Actuarial System for Loss Reserving
 ```{raw} html
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 59</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 19</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 60</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 20</span>
 </div>
 ```
 :::
