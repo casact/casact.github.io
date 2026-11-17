@@ -19,7 +19,7 @@ Actuarial reserving in Python, triangle data manipulation, link ratios calculati
 ```{raw} html
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 289</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 290</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 127</span>
 </div>
 ```
@@ -64,7 +64,7 @@ Tryangle is an automatic chainladder reserving framework. It provides scoring an
 ```{raw} html
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 29</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 30</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 13</span>
 </div>
 ```
@@ -94,7 +94,7 @@ Webpage for the casact GitHub
 ```{raw} html
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 0</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 1</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 1</span>
 </div>
 ```
