@@ -27,7 +27,7 @@ All 59 public repositories in the [casact GitHub organization](https://github.co
   <td>Actuarial reserving in Python, triangle data manipulation, link ratios calculation, and IBNR models.</td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 291</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 127</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 126</span></td>
   <td>2017 Jun</td>
 </tr>
 <tr>
@@ -51,7 +51,7 @@ All 59 public repositories in the [casact GitHub organization](https://github.co
   <td>Tryangle is an automatic chainladder reserving framework. It provides scoring and optimisation methods based on machine learning techniques to automatically select optimal parameters to minimise reserve prediction error. </td>
   <td><span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span></td>
   <td><span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 30</span></td>
-  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 13</span></td>
+  <td><span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 12</span></td>
   <td>2021 May</td>
 </tr>
 <tr>

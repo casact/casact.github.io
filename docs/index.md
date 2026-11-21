@@ -20,7 +20,7 @@ Actuarial reserving in Python, triangle data manipulation, link ratios calculati
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 291</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 127</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 126</span>
 </div>
 ```
 :::
@@ -65,7 +65,7 @@ Tryangle is an automatic chainladder reserving framework. It provides scoring an
 <div class="cas-repo-meta">
   <span class="cas-repo-lang"><span class="cas-lang-dot" style="background-color:#3572A5"></span>Python</span>
   <span class="cas-repo-stat"><i class="fa-solid fa-star"></i> 30</span>
-  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 13</span>
+  <span class="cas-repo-stat"><i class="fa-solid fa-code-fork"></i> 12</span>
 </div>
 ```
 :::
